@@ -1,0 +1,5 @@
+Color Ramp:Custom Chromatic Aberration Color Ramp Simple = interpolation:LINEAR color_mode:RGB pos:0.0 color:1.0,1.0,0.0,1.0 pos:1.0 color:0.0,0.0,1.0,1.0
+custom chromatic aberration simple enable = True
+custom chromatic aberration simple = 1.0
+custom chromatic aberration simple exponent = 1.1
+Float3:custom chromatic aberration simple mult = 2.0,2.0,2.0

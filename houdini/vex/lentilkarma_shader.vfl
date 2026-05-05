@@ -1,0 +1,485 @@
+// LentilKarma CVEX Lens Shader for Karma CPU
+// This is the template file — the Python code generator produces
+// a specialized version with baked lens constants per lens.
+//
+// Target: Houdini 20.5+ Karma CPU
+// Compile: vcc -O vop -l lentilkarma_shader.hda lentilkarma_shader.vfl
+//
+// Usage: Camera LOP > Karma tab > Use Lens Shader > Lens Shader VOP
+
+#pragma opname      lentilkarma_lens
+#pragma oplabel     "LentilKarma Lens Shader"
+
+// Hide internal variables from UI
+#pragma hint ix              hidden
+#pragma hint iy              hidden
+#pragma hint seed            hidden
+#pragma hint sampleindex     hidden
+#pragma hint datawindow      hidden
+#pragma hint viewport        hidden
+#pragma hint xres            hidden
+#pragma hint yres            hidden
+#pragma hint focal           hidden
+#pragma hint focus           hidden
+#pragma hint fstop           hidden
+#pragma hint aperture        hidden
+#pragma hint aspect          hidden
+#pragma hint isRHS           hidden
+#pragma hint P               hidden
+#pragma hint I               hidden
+#pragma hint tint            hidden
+#pragma hint jitter          hidden
+#pragma hint Time            hidden
+#pragma hint clippingrange   hidden
+
+// User parameter labels
+#pragma label fstop_override         "F-Stop Override"
+#pragma label focus_dist_override    "Focus Distance Override"
+#pragma label chromatic_aberration   "Chromatic Aberration"
+#pragma label exposure               "Exposure"
+#pragma label aperture_ray_guiding   "Ray Guiding"
+#pragma label aperture_auto_exposure "Auto Exposure"
+#pragma label tilt_shift_angle_x     "Tilt X"
+#pragma label tilt_shift_angle_y     "Tilt Y"
+#pragma label tilt_shift_offset_x    "Shift X"
+#pragma label tilt_shift_offset_y    "Shift Y"
+#pragma label dof_factor             "DOF Factor"
+#pragma label dof_remove             "DOF Remove"
+#pragma label flip                   "Flip Image"
+#pragma label global_scale           "Global Scale"
+#pragma label distortion_amount      "Distortion Amount"
+#pragma label distortion_exponent    "Distortion Exponent"
+#pragma label bokeh_swirliness       "Bokeh Swirliness"
+#pragma label bloom_amount           "Bloom Amount"
+#pragma label bloom_size             "Bloom Size"
+#pragma label glare_amount           "Glare Amount"
+#pragma label glare_size             "Glare Size"
+#pragma label glare_rotate           "Glare Rotation"
+#pragma label glare_streaks          "Glare Streaks"
+#pragma label radial_blur_angle      "Radial Blur Angle"
+#pragma label radial_blur_power      "Radial Blur Power"
+
+// User parameter ranges
+#pragma range fstop_override         0 32
+#pragma range focus_dist_override    0 100
+#pragma range chromatic_aberration   0 1
+#pragma range exposure               -5 5
+#pragma range tilt_shift_angle_x     -45 45
+#pragma range tilt_shift_angle_y     -45 45
+#pragma range tilt_shift_offset_x    -50 50
+#pragma range tilt_shift_offset_y    -50 50
+#pragma range dof_factor             0 2
+#pragma range dof_remove             0 1
+#pragma range global_scale           0.01 10
+#pragma range distortion_amount      -1 1
+#pragma range distortion_exponent    0.5 4
+#pragma range bokeh_swirliness       0 1
+#pragma range bloom_amount           0 1
+#pragma range bloom_size             0 1
+#pragma range glare_amount           0 1
+#pragma range glare_size             0 1
+#pragma range glare_rotate           0 360
+#pragma range glare_streaks          2 12
+#pragma range radial_blur_angle      0 45
+#pragma range radial_blur_power      0 4
+
+#include "lentilkarma_core.h"
+
+// Jitter and DOF random seeds (XOR with pixel seed for decorrelation)
+#define LS_JITTER_SEED   0x98A208B1
+#define LS_DOF_SEED      0xA8B2440D
+#define LS_CA_SEED       0xBF31C7E2
+#define LS_BLOOM_SEED    0xD4E5F6A7
+#define LS_GLARE_SEED    0xC1D2E3F4
+
+// ============================================================================
+// BAKED LENS CONSTANTS (replaced by code generator per lens)
+// These defaults are for a simple 2-element test lens.
+// ============================================================================
+
+// //-LENS_CONSTANTS_BEGIN-//
+
+// Lens design f-number
+#define LS_F_NUMBER 1.4
+
+// Sensor size and unit scale
+#define LS_DEFAULT_SENSOR_SIZE 0.06749  // meters (67.49mm)
+#define LS_UNIT_SCALE 0.001             // mm to meters
+
+// Aperture
+#define LS_APERTURE_IDX 3
+#define LS_APERTURE_R 0.022             // meters (22mm)
+#define LS_APERTURE_D 0.00808           // meters
+
+// Sensor positions for focus interpolation
+#define LS_SENSOR_POS_NEAR 0.09418
+#define LS_SENSOR_POS_START 0.079
+#define LS_SENSOR_POS_FAR 0.06821
+
+// Ray guiding calibration
+#define LS_RAY_SPREAD 0.621875
+#define LS_RAY_SPREAD_500M 0.7
+#define LS_RAY_SPREAD_NEAR 0.540625
+#define LS_RAY_EDGE_ANGLE 42.0
+#define LS_RAY_EDGE_ANGLE_500M 43.0
+#define LS_RAY_EDGE_ANGLE_NEAR 40.0
+#define LS_RAY_GUIDING_SPREAD 19.5
+#define LS_RAMP_COVERAGE 8.633
+#define LS_RAMP_V1 16.08
+#define LS_RAMP_V2 15.879
+#define LS_RAMP_V3 15.477
+#define LS_RAMP_V4 14.673
+#define LS_RAMP_V5 13.111
+#define LS_RAY_GUIDING_FOCUS_SHIFT_500M 20.25
+#define LS_RAY_GUIDING_FOCUS_SHIFT_NEAR 18.5
+
+// //-LENS_CONSTANTS_END-//
+
+
+cvex lentilkarma_lens(
+    // === Karma standard inputs (modern API) ===
+    int ix = 0;
+    int iy = 0;
+    int seed = 0;
+    int sampleindex = 0;
+    vector4 datawindow = 0;
+    vector4 viewport = {-1, 1, -1, 1};
+    int xres = 0;
+    int yres = 0;
+    float focal = 1;
+    float focus = 1;
+    float fstop = 0;
+    float aperture = 1;
+    float aspect = 1;
+    int isRHS = 0;
+    float Time = 0;
+    vector2 clippingrange = {0.001, 10000};
+
+    // === Karma standard outputs ===
+    export vector P = 0;
+    export vector I = 0;
+    export vector tint = 1;
+    export vector2 jitter = 0;
+
+    // === LentilKarma user parameters ===
+    float fstop_override = 0.0;
+    float focus_dist_override = 0.0;
+    float chromatic_aberration = 0.0;
+    float exposure = 0.0;
+    int aperture_ray_guiding = 1;
+    int aperture_auto_exposure = 1;
+    float tilt_shift_angle_x = 0.0;
+    float tilt_shift_angle_y = 0.0;
+    float tilt_shift_offset_x = 0.0;
+    float tilt_shift_offset_y = 0.0;
+    float dof_factor = 1.0;
+    float dof_remove = 0.0;
+    int flip = 1;
+    float global_scale = 1.0;
+    float distortion_amount = 0.0;
+    float distortion_exponent = 2.0;
+    float bokeh_swirliness = 0.0;
+    float bloom_amount = 0.0;
+    float bloom_size = 0.3;
+    float glare_amount = 0.0;
+    float glare_size = 0.3;
+    float glare_rotate = 0.0;
+    int glare_streaks = 5;
+    float radial_blur_angle = 0.0;
+    float radial_blur_power = 0.0;
+)
+{
+    // ========================================================================
+    // 1. PIXEL COORDINATE SETUP (modern Karma ix/iy API)
+    // ========================================================================
+
+    // Convert pixel coordinates to jittered NDC
+    int rx = ix + int(datawindow[0]);
+    int ry = iy + int(datawindow[2]);
+    float jx = rand(seed + sampleindex * 7919);
+    float jy = rand(seed + sampleindex * 7919 + 1);
+    jitter = set(jx, jy);
+    float sx = float(rx) + jx;
+    float sy = float(ry) + jy;
+    sx = fit(sx, 0, float(xres), viewport[0], viewport[1]);
+    sy = fit(sy, 0, float(yres), viewport[2], viewport[3]);
+
+    // Convert NDC (-1..1) to normalized (0..1) like Blender's P.x, P.y
+    float px = fit(sx, viewport[0], viewport[1], 0.0, 1.0);
+    float py = fit(sy, viewport[2], viewport[3], 0.0, 1.0);
+
+    // ========================================================================
+    // 2. RESOLVE CAMERA PARAMETERS
+    // ========================================================================
+
+    float focus_dist = focus_dist_override;
+    if (focus_dist == 0.0) focus_dist = focus;
+    focus_dist *= 1.0 / global_scale;
+
+    float fstop_val = fstop;
+    if (fstop_override > 0.0) fstop_val = fstop_override;
+
+    float fstop01 = min(sqrt(pow(LS_F_NUMBER, 2.0) / pow(fstop_val, 2.0)), 1.0);
+
+    float _sensor_size = LS_DEFAULT_SENSOR_SIZE;
+
+    // ========================================================================
+    // 3. INITIAL RAY SETUP (sensor position)
+    // ========================================================================
+
+    // Map pixel position to sensor position
+    // Blender: (0.5 - P.x) * sensor_size * flip
+    float flip_sign = flip ? 1.0 : -1.0;
+    float s_px = (0.5 - px) * _sensor_size * flip_sign;
+    float s_py = (0.5 - py) * _sensor_size / aspect * flip_sign;
+
+    // //-SENSOR_POSITION-// (replaced by code gen with focus LUT result)
+    float _sensor_position = 0.0;
+
+    vector ray_p = set(s_px, s_py, -_sensor_position);
+    vector ray_d = set(0.0, 0.0, 1.0);
+    vector _T = set(1.0, 1.0, 1.0);
+    vector surface_n = set(0.0, 0.0, 1.0);
+
+    // Apply tilt/shift offsets
+    ray_p[0] += tilt_shift_offset_x * 0.001;
+    ray_p[1] += tilt_shift_offset_y * 0.001;
+
+    if (tilt_shift_angle_x != 0.0 || tilt_shift_angle_y != 0.0)
+    {
+        vector _ray_p = set(ray_p[0], ray_p[1], 0.0);
+        _ray_p = qrotate(quaternion(tilt_shift_angle_x, set(1.0, 0.0, 0.0)), _ray_p);
+        _ray_p = qrotate(quaternion(tilt_shift_angle_y, set(0.0, 1.0, 0.0)), _ray_p);
+        ray_p = set(_ray_p[0], _ray_p[1], _ray_p[2] + ray_p[2]);
+    }
+
+    // Save sensor position for post-trace effects
+    vector sensor_pos = ray_p;
+
+    // ========================================================================
+    // 4. RAY GUIDING (pre-shape ray direction for efficiency)
+    // ========================================================================
+
+    // Generate random direction on disk for initial spread
+    vector N_rand = set(
+        rand(seed ^ 0x12345678 + sampleindex),
+        rand(seed ^ 0x87654321 + sampleindex),
+        0.0
+    );
+    ray_d = normalize(ls_sample_disk(radians(26.775), N_rand) + ray_d);
+
+    // Ray spread interpolation based on sensor position
+    float _ray_spread = ls_ray_guiding_val(ray_p[2],
+        LS_SENSOR_POS_NEAR, LS_SENSOR_POS_START, LS_SENSOR_POS_FAR,
+        LS_RAY_SPREAD_NEAR, LS_RAY_SPREAD, LS_RAY_SPREAD_500M);
+    _ray_spread *= 1.0 - dof_remove;
+
+    ray_d = normalize(lerp(set(0.0, 0.0, 1.0), ray_d, _ray_spread));
+
+    // Ray edge angle (outer rays bend inward toward lens)
+    float ray_angle = ls_ray_guiding_val(ray_p[2],
+        LS_SENSOR_POS_NEAR, LS_SENSOR_POS_START, LS_SENSOR_POS_FAR,
+        LS_RAY_EDGE_ANGLE_NEAR, LS_RAY_EDGE_ANGLE, LS_RAY_EDGE_ANGLE_500M);
+
+    vector _pos = ray_p * set(1.0, 1.0, 0.0);
+    float _pos_l = length(_pos);
+
+    ray_angle *= -5.5;
+    ray_angle *= _pos_l;
+
+    vector _pos_n = normalize(_pos);
+    vector _cross = cross(ray_d, _pos_n);
+
+    ray_d = qrotate(quaternion(radians(ray_angle), _cross), ray_d);
+
+    // Aperture-based ray guiding (concentrates rays when stopped down)
+    if (fstop01 < 1.0 && aperture_ray_guiding == 1)
+    {
+        float ray_guiding_spread_lerp = ls_ray_guiding_val(ray_p[2],
+            LS_SENSOR_POS_NEAR, LS_SENSOR_POS_START, LS_SENSOR_POS_FAR,
+            LS_RAY_GUIDING_FOCUS_SHIFT_NEAR, LS_RAY_GUIDING_SPREAD,
+            LS_RAY_GUIDING_FOCUS_SHIFT_500M);
+
+        float pos_l_spread_mult = ray_guiding_spread_lerp * _pos_l;
+        float angle2 = pos_l_spread_mult * -10.0;
+
+        if (LS_RAMP_COVERAGE > 0.0)
+        {
+            float map_range = ls_fit_clamp(pos_l_spread_mult, 0.0, LS_RAMP_COVERAGE, 0.0, 1.0);
+
+            float mr01 = ls_fit(map_range, 0.0, 0.2, 0.0, 1.0);
+            float mr02 = ls_fit(map_range, 0.2, 0.4, 0.0, 1.0);
+            float mr03 = ls_fit(map_range, 0.4, 0.6, 0.0, 1.0);
+            float mr04 = ls_fit(map_range, 0.6, 0.8, 0.0, 1.0);
+            float mr05 = ls_fit(map_range, 0.8, 1.0, 0.0, 1.0);
+
+            float result = 0.0;
+            if (map_range <= 0.2)
+                result = ls_lerp_clamp(LS_RAMP_V1, LS_RAMP_V2, mr01);
+            if (map_range <= 0.4 && map_range > 0.2)
+                result = ls_lerp_clamp(LS_RAMP_V2, LS_RAMP_V3, mr02);
+            if (map_range <= 0.6 && map_range > 0.4)
+                result = ls_lerp_clamp(LS_RAMP_V3, LS_RAMP_V4, mr03);
+            if (map_range <= 0.8 && map_range > 0.6)
+                result = ls_lerp_clamp(LS_RAMP_V4, LS_RAMP_V5, mr04);
+            if (map_range > 0.8)
+                result = ls_lerp_clamp(LS_RAMP_V5, 1.0, mr05);
+
+            angle2 *= result;
+        }
+
+        vector ray_n2 = set(0.0, 0.0, 1.0);
+        _cross = cross(_pos_n, ray_n2);
+        ray_n2 = qrotate(quaternion(radians(-angle2), _cross), ray_n2);
+        ray_d = lerp(ray_n2, ray_d, fstop01);
+        ray_d = normalize(ray_d);
+    }
+
+    // ========================================================================
+    // 5. CHROMATIC ABERRATION (stochastic wavelength sampling)
+    // ========================================================================
+
+    // //-CHROMATIC_ABERRATION-// (code gen inserts wavelength color LUT + IOR modifications)
+
+    if (chromatic_aberration != 0.0)
+    {
+        float ca_rand = rand(seed ^ LS_CA_SEED + sampleindex);
+        float wl = lerp(410.0, 680.0, ca_rand);
+        _T = ls_wavelength_to_rgb(wl) * set(4.4, 6.6, 7.14286);
+    }
+
+    // ========================================================================
+    // 6. TRACE LENS ELEMENTS (replaced by code gen with baked per-surface calls)
+    // ========================================================================
+
+    // //-TRACE_LENS-//
+    // The code generator replaces this section with a sequence of
+    // ls_lineSphereIntersect() + ls_refract() calls per surface,
+    // with all radii, thicknesses, IORs, and diameters baked as literals.
+    //
+    // Default: simple 2-element test lens
+    ls_lineSphereIntersect(ray_p, ray_d, 0.0, -100.0 * LS_UNIT_SCALE, surface_n, _T, 0, 0);
+    ls_refract(ray_d, surface_n, 1.3, _T, 0);
+    if (length(ray_p * set(1.0, 1.0, 0.0)) > 40.0 * LS_UNIT_SCALE * 0.5) _T = set(0.0, 0.0, 0.0);
+
+    ls_lineSphereIntersect(ray_p, ray_d, 8.7 * LS_UNIT_SCALE, 100.0 * LS_UNIT_SCALE, surface_n, _T, 1, 1);
+    ls_refract(ray_d, surface_n, 1.3, _T, 1);
+    if (length(ray_p * set(1.0, 1.0, 0.0)) > 40.0 * LS_UNIT_SCALE * 0.5) _T = set(0.0, 0.0, 0.0);
+
+    // ========================================================================
+    // 7. POST-TRACE EFFECTS
+    // ========================================================================
+
+    // Exposure
+    _T *= pow(2, exposure);
+
+    // Auto exposure compensation
+    if (aperture_ray_guiding == 1)
+    {
+        if (aperture_auto_exposure == 0) _T *= pow(0.5, fstop_val - 1.0);
+    }
+    else
+    {
+        if (aperture_auto_exposure == 1) _T *= 1.0 / pow(fstop01, 2.0);
+    }
+
+    // DOF factor adjustment
+    if (dof_factor != 1.0 || fstop_val < LS_F_NUMBER)
+    {
+        float _dof_factor = dof_factor * max(LS_F_NUMBER / fstop_val, 1.0);
+        vector focus_p = ls_rayPlaneIntersect(ray_p, ray_d,
+            set(0.0, 0.0, 1.0), set(0.0, 0.0, focus_dist));
+
+        ray_p = set(ray_p[0] * _dof_factor, ray_p[1] * _dof_factor, ray_p[2]);
+        ray_d = normalize(focus_p - ray_p);
+    }
+
+    // Bloom
+    if (bloom_amount > 0.0)
+    {
+        vector bloom_rand = set(
+            rand(seed ^ LS_BLOOM_SEED + sampleindex),
+            rand(seed ^ (LS_BLOOM_SEED + 1) + sampleindex),
+            0.0
+        );
+        if (bloom_rand.x < bloom_amount)
+        {
+            float noise3 = bloom_rand.y;
+            ray_p += normalize(set(bloom_rand.x - 0.5, bloom_rand.y - 0.5, 0.0)) *
+                     noise3 * (bloom_size * 0.005);
+        }
+    }
+
+    // Glare
+    if (glare_amount > 0.0)
+    {
+        vector glare_rand = set(
+            rand(seed ^ LS_GLARE_SEED + sampleindex),
+            rand(seed ^ (LS_GLARE_SEED + 1) + sampleindex),
+            0.0
+        );
+        if (glare_rand.x < glare_amount)
+        {
+            float noise3 = glare_rand.y;
+            float glare_rot = floor(glare_rand.x * glare_streaks);
+            glare_rot = ((glare_rot / glare_streaks) * 360.0) - glare_rotate;
+            vector glare_n = qrotate(quaternion(radians(glare_rot), set(0.0, 0.0, 1.0)), set(1.0, 0.0, 0.0));
+            ray_p += glare_n * noise3 * (glare_size * 0.005);
+        }
+    }
+
+    // Bokeh swirliness
+    if (bokeh_swirliness != 0.0)
+    {
+        vector focus_p = ls_rayPlaneIntersect(ray_p, ray_d,
+            set(0.0, 0.0, 1.0), set(0.0, 0.0, focus_dist));
+        vector straight_line = normalize(focus_p) * focus_dist * 2.0;
+
+        vector bokeh_point = ls_rayPlaneIntersect(ray_p, ray_d,
+            set(0.0, 0.0, 1.0), straight_line);
+        float bokeh_l = length(bokeh_point * set(1.0, 1.0, 0.0));
+        float val = length(straight_line * set(1.0, 1.0, 0.0)) / max(bokeh_l, 0.0001);
+
+        vector swirliness_p = set(bokeh_point[0] * val, bokeh_point[1] * val, bokeh_point[2]);
+        swirliness_p = lerp(bokeh_point, swirliness_p, bokeh_swirliness);
+
+        ray_d = normalize(swirliness_p - focus_p);
+        ray_p = swirliness_p - (length(swirliness_p) * ray_d);
+    }
+
+    // Radial blur
+    if (radial_blur_angle != 0.0)
+    {
+        float a = pow(length(set(sensor_pos[0], sensor_pos[1], 0.0)) * 10.0, radial_blur_power);
+        float rb_rand = rand(seed ^ 0xAABBCCDD + sampleindex);
+        float b = radians((rb_rand - 0.5) * radial_blur_angle);
+
+        float rb_angle = a * b;
+        vector4 rb_q = quaternion(rb_angle, set(0.0, 0.0, 1.0));
+        ray_d = qrotate(rb_q, ray_d);
+        ray_p = qrotate(rb_q, ray_p);
+    }
+
+    // Distortion
+    if (distortion_amount != 0.0)
+    {
+        float d_amount = pow(length(set(ray_d[0], ray_d[1], 0.0)), distortion_exponent) * distortion_amount;
+        ray_d = lerp(ray_d, set(0.0, 0.0, -1.0), d_amount);
+        ray_d = normalize(ray_d);
+    }
+
+    // ========================================================================
+    // 8. FINAL OUTPUT
+    // ========================================================================
+
+    P = ray_p * global_scale;
+    I = ray_d;
+    tint = _T;
+
+    // Handle coordinate handedness (Karma convention)
+    if (!isRHS)
+    {
+        P.z = -P.z;
+        I.z = -I.z;
+    }
+}

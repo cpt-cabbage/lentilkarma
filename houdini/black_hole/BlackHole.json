@@ -1,0 +1,14 @@
+{
+    "env": [
+        {
+            "BLACKHOLE": "C:/Users/christophe.leyder/Desktop/LensSim-3.2.0/"
+        },
+        {
+            "PYTHONPATH": {
+                "value": "$BLACKHOLE/houdini/black_hole/python",
+                "method": "prepend"
+            }
+        }
+    ],
+    "path": "$BLACKHOLE/houdini/black_hole"
+}

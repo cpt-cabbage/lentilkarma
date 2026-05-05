@@ -1,0 +1,3223 @@
+;_name	lentilkarma
+; ModuleID = 'lentilkarma'
+source_filename = "lentilkarma"
+
+@0 = private constant [44 x double] [double 2.025384e-01, double 2.200199e-01, double 0x3FCEE822533C122A, double 0x3FD122DA60085361, double 0x3FD3332B10240F7F, double 0x3FD5BB17CE52DECA, double 0x3FD8D5B4FDCE218C, double 0x3FDCA4384E501A1F, double 0x3FE0A7AE3A0F9B54, double 0x3FE3848A433A675A, double 0x3FE70751580C5B83, double 0x3FEB5593BB085437, double 0x3FF04EB168EE2B16, double 0x3FF38B9EFD05CFA3, double 0x3FF784378D0A142B, double 0x3FFC62F7EF3A5FF8, double 0x40012DFDBDDB6D4F, double 0x4004D794C5CA4F19, double 0x400955709A71DBBA, double 0x400ED79FE48C5C19, double 0x4012CC894D9C151F, double 0x4016F1084C7FB56D, double 0x401C059F7ADA10D8, double 0x402120551D3DD375, double 0x4024F2692CBF50B8, double 0x4029A1ECA80973F2, double 0x402F61017F061A76, double 0x403336919A1BCA8C, double 0x403788DC5931CA7D, double 0x403CD59D8409E55C, double 0x4041AAC4B3A3B0F5, double 0x4045A715633E93BA, double 0x404A8A65748E7249, double 0x4050448086B8965F, double 0x4053F185B0AE8915, double 0x405873967598079E, double 0x405DFAEE8172B14D, double 0x4062615A7F01E8B8, double 0x406689BABC037BE0, double 0x406BA31406825027, double 0x4070F1FA54F2F682, double 0x4074C7A271B4CE28, double 0x40797B895F016D3D, double 5.000000e+02]
+@1 = private constant [44 x double] [double -2.130528e-02, double -2.103676e-02, double -2.082787e-02, double -2.065945e-02, double -2.052098e-02, double -2.040626e-02, double -2.031103e-02, double -2.023205e-02, double -2.016665e-02, double -2.011260e-02, double -2.006803e-02, double -2.003134e-02, double -2.000119e-02, double -1.997643e-02, double -1.995614e-02, double -1.993952e-02, double -1.992591e-02, double -1.991479e-02, double -1.990569e-02, double -1.989826e-02, double -1.989219e-02, double -1.988724e-02, double -1.988319e-02, double -1.987989e-02, double -1.987720e-02, double -1.987500e-02, double -1.987321e-02, double -1.987175e-02, double -1.987055e-02, double -1.986958e-02, double -1.986879e-02, double -1.986814e-02, double -1.986761e-02, double -1.986718e-02, double -1.986683e-02, double -1.986654e-02, double -1.986631e-02, double -1.986612e-02, double -1.986596e-02, double -1.986584e-02, double -1.986573e-02, double -1.986565e-02, double -1.986558e-02, double -1.986553e-02]
+@2 = private constant [42 x double] [double 0x3FDD3BB31EFBC3B0, double 4.781979e-01, double 0x3FE024B02DDAAEB8, double 0x3FE12CB87A855742, double 0x3FE27087920525AF, double 0x3FE3FDA5F877A076, double 0x3FE5E4AC8D114B01, double 0x3FE839F625B69DE1, double 0x3FEB16794E4A90C8, double 0x3FEE98D365EE1B7C, double 0x3FF173480E6197A0, double 0x3FF416DDA2321983, double 0x3FF75366B210B3D7, double 0x3FFB4B83FA201722, double 0x400014D6954D8498, double 0x4006BA20F9F5A4DD, double 0x400B37715E112D4F, double 0x40105C7AD2841BD9, double 0x4013BCCB50F6BD8C, double 0x4017E0C9B4EA57F8, double 0x401CF4C329E0CF0D, double 0x402197863DF228FD, double 0x40256923B10A239A, double 0x402A1815B5F4C40D, double 0x402FD67827590A5D, double 0x403370DF89E8CC88, double 0x4037C2A4205B3F41, double 0x403D0EC0C2FE41E5, double 0x4041C6F16F03180D, double 0x4045C2C663264006, double 0x404AA57EB5BD919B, double 0x405051B01A84BB91, double 0x4053FE4326B0C3D8, double 0x40587FC7F7D0DC7C, double 0x405E0674608F8CD0, double 0x406266B42F2C3D76, double 0x40668E9358D2AA06, double 0x406BA74E5705CB46, double 0x4070F3B66BBA0D58, double 0x4074C8E77D2498E7, double 0x40797C3C6B88BA23, double 5.000000e+02]
+@3 = private constant [42 x double] [double 1.903770e-01, double 0x3FC958612A924FCE, double 2.063532e-01, double 0x3FCBAC859A085462, double 0x3FCD3A530D18416A, double 0x3FCF323EEC79E64B, double 0x3FD0DF3869FECC4E, double 0x3FD28E4C1E10B732, double 0x3FD4D6640FC9F785, double 0x3FD8076BC49F2BD5, double 0x3FDCB191BDAD1F32, double 0x3FE1FB6DA4733C63, double 0x3FE8418921D237C6, double 0x3FF2A07EF8D9701E, double 0x40039AE454D3C1DF, double 0xC0028050476B238F, double 0xBFF3C5E09759F946, double 0xBFEBC9501AF579BF, double 0xBFE5F21F7CC7FCAE, double 0xBFE282DECCD4847C, double 0xBFE049D1B594CCD6, double 0xBFDD84C1F1269E4F, double 0xBFDB536394CFDB4A, double -4.016578e-01, double 0xBFD87BC5E958C99B, double 0xBFD78B9A3D0294DB, double 0xBFD6D0FAAEDD4DA3, double 0xBFD63E8B6B8386B3, double 0xBFD5CAC35D3768A2, double 0xBFD56EA9F709E22C, double -3.303864e-01, double 0xBFD4E9FCBE2C2019, double 0xBFD4BA73A41197AD, double 0xBFD4941967851F64, double 0xBFD47518253ACD06, double 0xBFD45BFD166BA743, double 0xBFD447A2159410EF, double 0xBFD4371CA1CC430F, double 0xBFD429B0DE2EC9ED, double 0xBFD41EC7E1808E05, double 0xBFD415E829749883, double 0xBFD40EAF85BF1C35]
+@4 = private constant [32 x double] [double 0x3FEF37100C928A87, double 0x3FF2D888371BA01A, double 0x3FF6D13795988319, double 0x3FFBB013F1A47291, double 0x4000D49CE802B339, double 0x40047E48FA19E1FE, double 0x4008FC3E9CF3C12D, double 0x400E7E8D8C70105E, double 0x4012A013899FA679, double 0x4016C4AA54A7CD0E, double 0x401BD95EB23CFE8E, double 0x40210A469ECADBDC, double 0x4024DC70A0FCE543, double 0x40298C0F07AFCCB7, double 0x402F4B44E1B16060, double 0x40332BC789C1E035, double 0x40377E2B1C6362FC, double 0x403CCB0AB99765E3, double 0x4041A58DF9E8B9BD, double 0x4045A1F58F234905, double 0x404A8561B511444B, double 0x4050420FDF10713C, double 0x4053EF2A27103A35, double 0x40587154D1F42907, double 0x405DF8CCA0C282C7, double 0x4062605D0899AC8F, double 0x406688D5284B22BE, double 0x406BA24BBDDE7267, double 0x4070F1A8270DE0E9, double 0x4074C7664B50B651, double 0x40797B683CE812CE, double 5.000000e+02]
+@5 = private constant [32 x double] [double -7.931439e-02, double -7.717112e-02, double -7.545614e-02, double -7.407832e-02, double -7.296794e-02, double -7.207094e-02, double -7.134497e-02, double -7.075654e-02, double -7.027905e-02, double -6.989121e-02, double -6.957597e-02, double -6.931957e-02, double -6.911093e-02, double -6.894110e-02, double -6.880280e-02, double -6.869016e-02, double -6.859840e-02, double -6.852363e-02, double -6.846270e-02, double -6.841304e-02, double -6.837256e-02, double -6.833957e-02, double -6.831268e-02, double -6.829075e-02, double -6.827288e-02, double -6.825830e-02, double -6.824642e-02, double -6.823673e-02, double -6.822884e-02, double -6.822240e-02, double -6.821715e-02, double -6.821286e-02]
+@6 = private constant [45 x double] [double 0x3FBCBF3F1A9D0F45, double 0x3FC032C7BDEF395E, double 0x3FC26FB36C289D2D, double 0x3FC52E547C2E23D5, double 0x3FC88C0876F1F9D8, double 0x3FCCACD2F1D4EF05, double 0x3FD0DE6F6C497F50, double 0x3FD3F92B853EEEA8, double 0x3FD7C7D4CB1DF60A, double 0x3FDC732774B90F81, double 0x3FE1168C48F9182F, double 0x3FE4997658CCCAC9, double 0x3FE8E7E39ECB5CB5, double 0x3FEE2FE753B6B660, double 0x3FF2550184647E2F, double 0x3FF64DC1A47A9E2C, double 0x3FFB2CB28B2D1A3F, double 0x400092F8CE078A63, double 0x40043CB454DBCF74, double 0x4008BABCEA56A076, double 0x400E3D2317B22353, double 0x40127F6C8F4A604B, double 0x4016A414D524343D, double 0x401BB8DEA2374CF3, double 0x4020FA13BB48C0E4, double 0x4024CC4DDCACBEBA, double 0x40297C00080D9595, double 0x402F3B4E209F5CD2, double 0x403323DB074D264E, double 0x40377650D55A8FEE, double 0x403CC346CEF16A3B, double 0x4041A1B9BACC443C, double 0x40459E3220CF0287, double 0x404A81B2E646C663, double 0x405040451D0AD2C2, double 0x4053ED6EE75E9E71, double 0x40586FAC9762B2A8, double 0x405DF73BB9BF7EDB, double 0x40625FA2E2D39F4F, double 0x4066882C8D4C594A, double 0x406BA1B8A65492FF, double 0x4070F16BCC746253, double 0x4074C73A1E770E7F, double 0x40797B4FE77BFAA2, double 5.000000e+02]
+@7 = private constant [45 x double] [double 0x3FFFB118CC54ACD6, double 0xBFF5B90F708B5863, double 0xBFDE9F61A4E09F93, double 0xBFD2BF7D2DFE1519, double 0xBFCB75A39B2534EE, double 0xBFC6072BEE456D72, double 0xBFC2AF3A95A81D6B, double 0xBFC0757FF456FF6B, double 0xBFBDCC60C135EAC9, double 0xBFBB881FF4920DB4, double 0xBFB9D76602E93E73, double -9.592252e-02, double -9.204872e-02, double -8.902566e-02, double -8.664561e-02, double -8.475876e-02, double -8.325467e-02, double -8.205044e-02, double -8.108291e-02, double -8.030337e-02, double -7.967388e-02, double -7.916461e-02, double -7.875200e-02, double -7.841731e-02, double -7.814555e-02, double -7.792473e-02, double -7.774517e-02, double -7.759909e-02, double -7.748020e-02, double -7.738341e-02, double -7.730458e-02, double -7.724037e-02, double -7.718805e-02, double -7.714542e-02, double -7.711068e-02, double -7.708236e-02, double -7.705928e-02, double -7.704047e-02, double -7.702513e-02, double -7.701263e-02, double -7.700244e-02, double -7.699413e-02, double -7.698735e-02, double -7.698183e-02, double -7.697732e-02]
+@8 = private constant [49 x double] [double 5.220470e-03, double 1.152350e-02, double 1.925352e-02, double 2.873361e-02, double 4.035998e-02, double 5.461854e-02, double 7.210521e-02, double 9.355083e-02, double 1.198517e-01, double 0x3FC3783E55254B69, double 0x3FC8887A0C8B7EA4, double 0x3FCEBE2CB66C632B, double 0x3FD32DE3930CE292, double 0x3FD7D9623C353A74, double 0x3FDD93895F39CC55, double 0x3FE24CCFD7434854, double 0x3FE69B65C1D0C555, double 0x3FEBE39B400CE063, double 0x3FF12EFA0366BCCD, double 0x3FF527DF9AAFC428, double 0x3FFA06FE718A86D7, double 0x4000003AEB6365D6, double 0x4003AA18FC7B3B35, double 0x4008284BF0188156, double 0x400DAAE6126E16B4, double 0x4012366DE911A6F1, double 0x40165B3D417EFB5E, double 0x401B7036F9665DD8, double 0x4020D5DD4971B900, double 0x4024A83B739E8841, double 0x40295819D0E1846A, double 0x402F179E1C8B260E, double 0x4033122441A8C1D6, double 0x403764C2D24D145B, double 0x403CB1EAC8B63CBD, double 0x4041992A5EA34E79, double 0x404595C85C4FB722, double 0x404A79773C219958, double 0x40503C438D28471C, double 0x4053E99003229F3C, double 0x40586BF83855B1E3, double 0x405DF3BB80290532, double 0x40625E02BFF37583, double 0x406686B3A192B752, double 0x406BA06FD2A0CC3E, double 0x4070F0E4E054690E, double 0x4074C6D75D4EE596, double 0x40797B198183A338, double 5.000000e+02]
+@9 = private constant [49 x double] [double -5.888000e-05, double -5.748000e-05, double -5.703000e-05, double -5.680000e-05, double -5.668000e-05, double -5.659000e-05, double -5.654000e-05, double -5.649000e-05, double -5.646000e-05, double -5.644000e-05, double -5.642000e-05, double -5.641000e-05, double -5.640000e-05, double -5.639000e-05, double -5.639000e-05, double -5.638000e-05, double -5.638000e-05, double -5.637000e-05, double -5.637000e-05, double -5.637000e-05, double -5.637000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05, double -5.636000e-05]
+@P = external global <3 x double>
+@I = external global <3 x double>
+@tint = external global <3 x double>
+@10 = private constant [31 x i8] c"LENTILKARMA [%d] >>> ENTER shader\0A\00"
+@11 = private constant [62 x i8] c"LENTILKARMA [%d] --- constants+LUT done (f=%.2f sensor_pos=%.6f)\0A\00"
+@12 = private constant [40 x <3 x double>] [<3 x double> <double 8.815510e-01, double 4.676630e-01, double 1.493221e+00>, <3 x double> <double 8.329570e-01, double 4.676630e-01, double 1.614375e+00>, <3 x double> <double 7.382820e-01, double 4.676630e-01, double 1.668221e+00>, <3 x double> <double 6.228980e-01, double 4.676630e-01, double 1.668221e+00>, <3 x double> <double 5.075130e-01, double 4.676630e-01, double 1.668221e+00>, <3 x double> <double 4.690510e-01, double 5.599700e-01, double 1.668221e+00>, <3 x double> <double 4.690510e-01, double 6.984320e-01, double 1.668221e+00>, <3 x double> <double 4.690510e-01, double 8.368930e-01, double 1.668221e+00>, <3 x double> <double 4.690510e-01, double 9.753550e-01, double 1.668221e+00>, <3 x double> <double 4.690510e-01, double 1.113817e+00, double 1.668221e+00>, <3 x double> <double 4.690510e-01, double 1.252278e+00, double 1.668221e+00>, <3 x double> <double 4.690510e-01, double 1.390740e+00, double 1.668221e+00>, <3 x double> <double 4.690510e-01, double 1.467663e+00, double 1.514375e+00>, <3 x double> <double 4.690510e-01, double 1.467663e+00, double 1.168221e+00>, <3 x double> <double 4.690510e-01, double 1.467663e+00, double 8.220670e-01>, <3 x double> <double 5.239960e-01, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 6.228980e-01, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 7.217990e-01, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 8.207000e-01, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 9.196010e-01, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 1.018502e+00, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 1.117403e+00, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 1.216304e+00, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 1.315205e+00, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 1.414106e+00, double 1.467663e+00, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 1.420325e+00, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 1.313817e+00, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 1.207308e+00, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 1.100799e+00, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 9.942900e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 8.877810e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 7.812720e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 6.747630e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 5.682540e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 4.676630e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 4.676630e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 4.676630e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 4.676630e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 4.676630e-01, double 6.682210e-01>, <3 x double> <double 1.469051e+00, double 4.676630e-01, double 6.682210e-01>]
+@13 = private constant [51 x i8] c"LENTILKARMA [%d] --- pre-trace (ray_p=%.6f,%.6f,%.6f)\0A\00"
+@14 = private constant [69 x i8] c"LENTILKARMA [%d] --- post-trace (ray_d=%.6f,%.6f,%.6f T=%.4f,%.4f,%.4f)\0A\00"
+@15 = private constant [66 x i8] c"LENTILKARMA [%d] <<< EXIT shader (P=%.6f,%.6f,%.6f I=%.4f,%.4f,%.4f)\0A\00"
+@16 = private constant [2 x i8] c"P\00"
+@17 = private constant [2 x i8] c"I\00"
+@18 = private constant [5 x i8] c"tint\00"
+
+; Function Attrs: alwaysinline nounwind
+define private double @"ls_efit@FFFFFF"(double* %value, double* %oldmin, double* %oldmax, double* %newmin, double* %newmax) #0 {
+__llvm_entry:
+  %value1 = load double, double* %value
+  %oldmin2 = load double, double* %oldmin
+  %output = fsub double %value1, %oldmin2
+  %oldmax3 = load double, double* %oldmax
+  %output5 = fsub double %oldmax3, %oldmin2
+  %output6 = call double @"div@FF"(double %output, double %output5)
+  %newmin7 = load double, double* %newmin
+  %newmax9 = load double, double* %newmax
+  %output11 = fsub double %newmax9, %newmin7
+  %output12 = fmul double %output6, %output11
+  %output13 = fadd double %newmin7, %output12
+  ret double %output13
+}
+
+; Function Attrs: nounwind readnone
+declare double @"div@FF"(double, double) #1
+
+; Function Attrs: alwaysinline nounwind
+define private double @"ls_ray_guiding_val@FFFFFFFF"(double* %sensor_pos, double* %pos01, double* %pos02, double* %pos03, double* %val01, double* %val02, double* %val03) #0 {
+__llvm_entry:
+  %0 = alloca double
+  %1 = alloca double
+  %2 = alloca double
+  %3 = alloca double
+  %4 = alloca double
+  %5 = alloca double
+  %6 = alloca double
+  %7 = alloca double
+  %8 = alloca double
+  %9 = alloca double
+  %sensor_pos1 = load double, double* %sensor_pos
+  %return = call double @"neg@FF"(double %sensor_pos1)
+  %pos022 = load double, double* %pos02
+  %return3 = fcmp ogt double %return, %pos022
+  %return4 = zext i1 %return3 to i64
+  %pos015 = load double, double* %pos01
+  %return6 = fcmp ogt double %pos015, 0.000000e+00
+  %return7 = zext i1 %return6 to i64
+  %return8 = call i64 @"and@III"(i64 %return4, i64 %return7)
+  %10 = icmp ne i64 %return8, 0
+  br i1 %10, label %true, label %false
+
+true:                                             ; preds = %__llvm_entry
+  store double %return, double* %0
+  %pos0111 = load double, double* %pos01
+  store double %pos0111, double* %1
+  %pos0212 = load double, double* %pos02
+  store double %pos0212, double* %2
+  %val0113 = load double, double* %val01
+  store double %val0113, double* %3
+  %val0214 = load double, double* %val02
+  store double %val0214, double* %4
+  %ls_efit = call double @"ls_efit@FFFFFF"(double* %0, double* %1, double* %2, double* %3, double* %4)
+  br label %UnifiedReturnBlock
+
+false:                                            ; preds = %__llvm_entry
+  %val0315 = load double, double* %val03
+  %return16 = fcmp ogt double %val0315, 0.000000e+00
+  br i1 %return16, label %true18, label %false19
+
+true18:                                           ; preds = %false
+  store double %return, double* %5
+  %pos0223 = load double, double* %pos02
+  store double %pos0223, double* %6
+  %pos0324 = load double, double* %pos03
+  store double %pos0324, double* %7
+  %val0225 = load double, double* %val02
+  store double %val0225, double* %8
+  %val0326 = load double, double* %val03
+  store double %val0326, double* %9
+  %ls_efit27 = call double @"ls_efit@FFFFFF"(double* %5, double* %6, double* %7, double* %8, double* %9)
+  br label %UnifiedReturnBlock
+
+false19:                                          ; preds = %false
+  %val0228 = load double, double* %val02
+  br label %UnifiedReturnBlock
+
+UnifiedReturnBlock:                               ; preds = %false19, %true18, %true
+  %UnifiedRetVal = phi double [ %ls_efit, %true ], [ %ls_efit27, %true18 ], [ %val0228, %false19 ]
+  ret double %UnifiedRetVal
+}
+
+; Function Attrs: nounwind readnone
+declare double @"neg@FF"(double) #1
+
+; Function Attrs: nounwind readnone
+declare i64 @"and@III"(i64, i64) #1
+
+; Function Attrs: alwaysinline nounwind
+define private <3 x double> @"ls_rayPlaneIntersect@VVVVV"(<3 x double>* %ray_origin, <3 x double>* %ray_direction, <3 x double>* %plane_normal, <3 x double>* %plane_point) #0 {
+__llvm_entry:
+  %ray_direction1 = load <3 x double>, <3 x double>* %ray_direction
+  %plane_normal2 = load <3 x double>, <3 x double>* %plane_normal
+  %return = call double @"dot@FVV"(<3 x double> %ray_direction1, <3 x double> %plane_normal2)
+  %return4 = call double @"abs@FF"(double %return)
+  %return5 = fcmp ogt double %return4, 1.000000e-04
+  br i1 %return5, label %true, label %end
+
+true:                                             ; preds = %__llvm_entry
+  %plane_point7 = load <3 x double>, <3 x double>* %plane_point
+  %ray_origin8 = load <3 x double>, <3 x double>* %ray_origin
+  %output = call <3 x double> @"sub@VV"(<3 x double> %plane_point7, <3 x double> %ray_origin8)
+  %plane_normal9 = load <3 x double>, <3 x double>* %plane_normal
+  %return10 = call double @"dot@FVV"(<3 x double> %output, <3 x double> %plane_normal9)
+  %output12 = call double @"div@FF"(double %return10, double %return)
+  %ray_origin13 = load <3 x double>, <3 x double>* %ray_origin
+  %ray_direction15 = load <3 x double>, <3 x double>* %ray_direction
+  %cast = call <3 x double> @"set@VF"(double %output12)
+  %output16 = call <3 x double> @"mul@VV"(<3 x double> %cast, <3 x double> %ray_direction15)
+  %output17 = call <3 x double> @"add@VV"(<3 x double> %ray_origin13, <3 x double> %output16)
+  br label %UnifiedReturnBlock
+
+end:                                              ; preds = %__llvm_entry
+  %return18 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  br label %UnifiedReturnBlock
+
+UnifiedReturnBlock:                               ; preds = %end, %true
+  %UnifiedRetVal = phi <3 x double> [ %output17, %true ], [ %return18, %end ]
+  ret <3 x double> %UnifiedRetVal
+}
+
+; Function Attrs: nounwind
+declare double @"dot@FVV"(<3 x double>, <3 x double>) #2
+
+; Function Attrs: nounwind
+declare double @"abs@FF"(double) #2
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"sub@VV"(<3 x double>, <3 x double>) #1
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"set@VF"(double) #1
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"mul@VV"(<3 x double>, <3 x double>) #1
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"add@VV"(<3 x double>, <3 x double>) #1
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"set@VFFF"(double, double, double) #1
+
+; Function Attrs: alwaysinline nounwind
+define private void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %p0, <3 x double>* %p1, double* %center, double* %radius, <3 x double>* %surface_n, <3 x double>* %T, i64* %hit_idx, i64* %inside) #0 {
+__llvm_entry:
+  %center1 = load double, double* %center
+  %radius2 = load double, double* %radius
+  %output = fsub double %center1, %radius2
+  %return = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double %output)
+  %p13 = load <3 x double>, <3 x double>* %p1
+  %return5 = call double @"dot@FVV"(<3 x double> %p13, <3 x double> %p13)
+  %output6 = fmul double 4.000000e+00, %return5
+  %p08 = load <3 x double>, <3 x double>* %p0
+  %output10 = call <3 x double> @"sub@VV"(<3 x double> %p08, <3 x double> %return)
+  %return14 = call double @"dot@FVV"(<3 x double> %output10, <3 x double> %output10)
+  %radius15 = load double, double* %radius
+  %output17 = fmul double %radius15, %radius15
+  %output18 = fsub double %return14, %output17
+  %output19 = fmul double %output6, %output18
+  %p020 = load <3 x double>, <3 x double>* %p0
+  %output22 = call <3 x double> @"sub@VV"(<3 x double> %p020, <3 x double> %return)
+  %p123 = load <3 x double>, <3 x double>* %p1
+  %return24 = call double @"dot@FVV"(<3 x double> %output22, <3 x double> %p123)
+  %output25 = fmul double 4.000000e+00, %return24
+  %p026 = load <3 x double>, <3 x double>* %p0
+  %output28 = call <3 x double> @"sub@VV"(<3 x double> %p026, <3 x double> %return)
+  %p129 = load <3 x double>, <3 x double>* %p1
+  %return30 = call double @"dot@FVV"(<3 x double> %output28, <3 x double> %p129)
+  %output31 = fmul double %output25, %return30
+  %output33 = fsub double %output31, %output19
+  %return35 = fcmp olt double %output33, 0.000000e+00
+  br i1 %return35, label %true, label %end
+
+true:                                             ; preds = %__llvm_entry
+  %return37 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return37, <3 x double>* %T
+  br label %UnifiedReturnBlock
+
+end:                                              ; preds = %__llvm_entry
+  %return38 = call double @"neg@FF"(double 2.000000e+00)
+  %p039 = load <3 x double>, <3 x double>* %p0
+  %output41 = call <3 x double> @"sub@VV"(<3 x double> %p039, <3 x double> %return)
+  %p142 = load <3 x double>, <3 x double>* %p1
+  %return43 = call double @"dot@FVV"(<3 x double> %output41, <3 x double> %p142)
+  %output44 = fmul double %return38, %return43
+  %hit_idx45 = load i64, i64* %hit_idx
+  %return46 = call i64 @"eq@III"(i64 %hit_idx45, i64 0)
+  %0 = icmp ne i64 %return46, 0
+  br i1 %0, label %true47, label %end48
+
+true47:                                           ; preds = %end
+  %return51 = call double @"sqrt@FF"(double %output33)
+  %output52 = fsub double %output44, %return51
+  br label %end48
+
+end48:                                            ; preds = %true47, %end
+  %t.0 = phi double [ %output52, %true47 ], [ %output44, %end ]
+  %hit_idx53 = load i64, i64* %hit_idx
+  %return54 = call i64 @"eq@III"(i64 %hit_idx53, i64 1)
+  %1 = icmp ne i64 %return54, 0
+  br i1 %1, label %true55, label %end56
+
+true55:                                           ; preds = %end48
+  %return59 = call double @"sqrt@FF"(double %output33)
+  %output60 = fadd double %t.0, %return59
+  br label %end56
+
+end56:                                            ; preds = %true55, %end48
+  %t.1 = phi double [ %output60, %true55 ], [ %t.0, %end48 ]
+  %p162 = load <3 x double>, <3 x double>* %p1
+  %return64 = call double @"dot@FVV"(<3 x double> %p162, <3 x double> %p162)
+  %output65 = fmul double %return64, 2.000000e+00
+  %output66 = call double @"div@FF"(double %t.1, double %output65)
+  %p067 = load <3 x double>, <3 x double>* %p0
+  %p169 = load <3 x double>, <3 x double>* %p1
+  %cast = call <3 x double> @"set@VF"(double %output66)
+  %output70 = call <3 x double> @"mul@VV"(<3 x double> %cast, <3 x double> %p169)
+  %output71 = call <3 x double> @"add@VV"(<3 x double> %p067, <3 x double> %output70)
+  store <3 x double> %output71, <3 x double>* %p0
+  %output74 = call <3 x double> @"sub@VV"(<3 x double> %output71, <3 x double> %return)
+  %return75 = call <3 x double> @"normalize@VV"(<3 x double> %output74)
+  store <3 x double> %return75, <3 x double>* %surface_n
+  %hit_idx76 = load i64, i64* %hit_idx
+  %return77 = call i64 @"eq@III"(i64 %hit_idx76, i64 1)
+  %2 = icmp ne i64 %return77, 0
+  br i1 %2, label %true78, label %end79
+
+true78:                                           ; preds = %end56
+  %return81 = call <3 x double> @"neg@VV"(<3 x double> %return75)
+  store <3 x double> %return81, <3 x double>* %surface_n
+  br label %end79
+
+end79:                                            ; preds = %true78, %end56
+  %inside82 = load i64, i64* %inside
+  %return83 = call i64 @"eq@III"(i64 %inside82, i64 1)
+  %3 = icmp ne i64 %return83, 0
+  br i1 %3, label %true84, label %end85
+
+true84:                                           ; preds = %end79
+  %surface_n86 = load <3 x double>, <3 x double>* %surface_n
+  %return87 = call <3 x double> @"neg@VV"(<3 x double> %surface_n86)
+  store <3 x double> %return87, <3 x double>* %surface_n
+  br label %end85
+
+end85:                                            ; preds = %true84, %end79
+  br label %UnifiedReturnBlock
+
+UnifiedReturnBlock:                               ; preds = %end85, %true
+  ret void
+}
+
+; Function Attrs: nounwind readnone
+declare i64 @"eq@III"(i64, i64) #1
+
+; Function Attrs: nounwind readnone
+declare double @"sqrt@FF"(double) #1
+
+; Function Attrs: nounwind
+declare <3 x double> @"normalize@VV"(<3 x double>) #2
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"neg@VV"(<3 x double>) #1
+
+; Function Attrs: alwaysinline nounwind
+define private void @"ls_refract@VVFVI"(<3 x double>* %incident, <3 x double>* %_Normal, double* %_eta, <3 x double>* %T, i64* %inside) #0 {
+__llvm_entry:
+  %_eta1 = load double, double* %_eta
+  %return = fcmp oeq double %_eta1, 0.000000e+00
+  %._eta1 = select i1 %return, double 1.000000e+00, double %_eta1
+  %_Normal4 = load <3 x double>, <3 x double>* %_Normal
+  %inside5 = load i64, i64* %inside
+  %return6 = call i64 @"eq@III"(i64 %inside5, i64 1)
+  %0 = icmp ne i64 %return6, 0
+  br i1 %0, label %true7, label %false
+
+true7:                                            ; preds = %__llvm_entry
+  %return10 = call <3 x double> @"neg@VV"(<3 x double> %_Normal4)
+  br label %end8
+
+false:                                            ; preds = %__llvm_entry
+  %output = call double @"div@FF"(double 1.000000e+00, double %._eta1)
+  br label %end8
+
+end8:                                             ; preds = %false, %true7
+  %Normal.0 = phi <3 x double> [ %return10, %true7 ], [ %_Normal4, %false ]
+  %eta.0 = phi double [ %._eta1, %true7 ], [ %output, %false ]
+  %output14 = fmul double %eta.0, %eta.0
+  %incident16 = load <3 x double>, <3 x double>* %incident
+  %return17 = call double @"dot@FVV"(<3 x double> %Normal.0, <3 x double> %incident16)
+  %incident19 = load <3 x double>, <3 x double>* %incident
+  %return20 = call double @"dot@FVV"(<3 x double> %Normal.0, <3 x double> %incident19)
+  %output21 = fmul double %return17, %return20
+  %output22 = fsub double 1.000000e+00, %output21
+  %output23 = fmul double %output14, %output22
+  %output24 = fsub double 1.000000e+00, %output23
+  %return26 = fcmp olt double %output24, 0.000000e+00
+  br i1 %return26, label %true28, label %false29
+
+true28:                                           ; preds = %end8
+  %return31 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return31, <3 x double>* %T
+  br label %end30
+
+false29:                                          ; preds = %end8
+  %incident33 = load <3 x double>, <3 x double>* %incident
+  %cast = call <3 x double> @"set@VF"(double %eta.0)
+  %output34 = call <3 x double> @"mul@VV"(<3 x double> %cast, <3 x double> %incident33)
+  %return38 = call double @"dot@FVV"(<3 x double> %Normal.0, <3 x double> %incident33)
+  %output39 = fmul double %eta.0, %return38
+  %return41 = call double @"sqrt@FF"(double %output24)
+  %output42 = fadd double %output39, %return41
+  %cast44 = call <3 x double> @"set@VF"(double %output42)
+  %output45 = call <3 x double> @"mul@VV"(<3 x double> %cast44, <3 x double> %Normal.0)
+  %output46 = call <3 x double> @"sub@VV"(<3 x double> %output34, <3 x double> %output45)
+  store <3 x double> %output46, <3 x double>* %incident
+  br label %end30
+
+end30:                                            ; preds = %false29, %true28
+  ret void
+}
+
+; Function Attrs: alwaysinline nounwind
+define private double @"ls_lookup_table@FF[F[F"(double* %key, double** %keys, double** %values) #0 {
+__llvm_entry:
+  %keys1 = load double*, double** %keys
+  %return = call i64 @"len@I[F"(double* %keys1)
+  %return3 = call i64 @"eq@III"(i64 %return, i64 0)
+  %0 = icmp ne i64 %return3, 0
+  br i1 %0, label %true, label %end
+
+true:                                             ; preds = %__llvm_entry
+  br label %UnifiedReturnBlock
+
+end:                                              ; preds = %__llvm_entry
+  %key4 = load double, double* %key
+  %return6 = call double @"getcomp@F[FI"(double* %keys1, i64 0)
+  %return7 = fcmp ole double %key4, %return6
+  br i1 %return7, label %true9, label %end10
+
+true9:                                            ; preds = %end
+  %values11 = load double*, double** %values
+  %return12 = call double @"getcomp@F[FI"(double* %values11, i64 0)
+  br label %UnifiedReturnBlock
+
+end10:                                            ; preds = %end
+  %output = sub i64 %return, 1
+  %return16 = call double @"getcomp@F[FI"(double* %keys1, i64 %output)
+  %return17 = fcmp oge double %key4, %return16
+  br i1 %return17, label %true19, label %end20
+
+true19:                                           ; preds = %end10
+  %values21 = load double*, double** %values
+  %return24 = call double @"getcomp@F[FI"(double* %values21, i64 %output)
+  br label %UnifiedReturnBlock
+
+end20:                                            ; preds = %end10
+  br label %cond
+
+cond:                                             ; preds = %true42, %false, %end20
+  %hi.0 = phi i64 [ %output, %end20 ], [ %hi.0, %true42 ], [ %output35, %false ]
+  %lo.0 = phi i64 [ 0, %end20 ], [ %output35, %true42 ], [ %lo.0, %false ]
+  %output29 = sub i64 %hi.0, 1
+  %return30 = call i64 @"lt@III"(i64 %lo.0, i64 %output29)
+  %1 = icmp ne i64 %return30, 0
+  br i1 %1, label %body, label %end31
+
+body:                                             ; preds = %cond
+  %output34 = add i64 %lo.0, %hi.0
+  %output35 = call i64 @"div@II"(i64 %output34, i64 2)
+  %keys36 = load double*, double** %keys
+  %return38 = call double @"getcomp@F[FI"(double* %keys36, i64 %output35)
+  %key39 = load double, double* %key
+  %return40 = fcmp ole double %return38, %key39
+  br i1 %return40, label %true42, label %false
+
+end31:                                            ; preds = %cond
+  %key46 = load double, double* %key
+  %keys47 = load double*, double** %keys
+  %return49 = call double @"getcomp@F[FI"(double* %keys47, i64 %lo.0)
+  %output50 = fsub double %key46, %return49
+  %return53 = call double @"getcomp@F[FI"(double* %keys47, i64 %hi.0)
+  %output57 = fsub double %return53, %return49
+  %output58 = call double @"div@FF"(double %output50, double %output57)
+  %values59 = load double*, double** %values
+  %return61 = call double @"getcomp@F[FI"(double* %values59, i64 %lo.0)
+  %return65 = call double @"getcomp@F[FI"(double* %values59, i64 %hi.0)
+  %output69 = fsub double %return65, %return61
+  %output70 = fmul double %output58, %output69
+  %output71 = fadd double %return61, %output70
+  br label %UnifiedReturnBlock
+
+true42:                                           ; preds = %body
+  br label %cond
+
+false:                                            ; preds = %body
+  br label %cond
+
+UnifiedReturnBlock:                               ; preds = %end31, %true19, %true9, %true
+  %UnifiedRetVal = phi double [ 0.000000e+00, %true ], [ %return12, %true9 ], [ %return24, %true19 ], [ %output71, %end31 ]
+  ret double %UnifiedRetVal
+}
+
+; Function Attrs: nounwind readnone
+declare i64 @"len@I[F"(double*) #1
+
+; Function Attrs: nounwind readnone
+declare double @"getcomp@F[FI"(double*, i64) #1
+
+; Function Attrs: nounwind readnone
+declare i64 @"lt@III"(i64, i64) #1
+
+; Function Attrs: nounwind readnone
+declare i64 @"div@II"(i64, i64) #1
+
+; Function Attrs: alwaysinline nounwind
+define private double @"_lens_lut_0@FF"(double* %fd) #0 {
+__llvm_entry:
+  %0 = alloca double
+  %1 = alloca double*
+  %2 = alloca double*
+  %fd1 = load double, double* %fd
+  store double %fd1, double* %0
+  store double* getelementptr inbounds ([44 x double], [44 x double]* @0, i64 0, i64 0), double** %1
+  store double* getelementptr inbounds ([44 x double], [44 x double]* @1, i64 0, i64 0), double** %2
+  %ls_lookup_table = call double @"ls_lookup_table@FF[F[F"(double* %0, double** %1, double** %2)
+  ret double %ls_lookup_table
+}
+
+; Function Attrs: alwaysinline nounwind
+define private double @"_lens_lut_1@FF"(double* %fd) #0 {
+__llvm_entry:
+  %0 = alloca double
+  %1 = alloca double*
+  %2 = alloca double*
+  %fd1 = load double, double* %fd
+  store double %fd1, double* %0
+  store double* getelementptr inbounds ([42 x double], [42 x double]* @2, i64 0, i64 0), double** %1
+  store double* getelementptr inbounds ([42 x double], [42 x double]* @3, i64 0, i64 0), double** %2
+  %ls_lookup_table = call double @"ls_lookup_table@FF[F[F"(double* %0, double** %1, double** %2)
+  ret double %ls_lookup_table
+}
+
+; Function Attrs: alwaysinline nounwind
+define private double @"_lens_lut_2@FF"(double* %fd) #0 {
+__llvm_entry:
+  %0 = alloca double
+  %1 = alloca double*
+  %2 = alloca double*
+  %fd1 = load double, double* %fd
+  store double %fd1, double* %0
+  store double* getelementptr inbounds ([32 x double], [32 x double]* @4, i64 0, i64 0), double** %1
+  store double* getelementptr inbounds ([32 x double], [32 x double]* @5, i64 0, i64 0), double** %2
+  %ls_lookup_table = call double @"ls_lookup_table@FF[F[F"(double* %0, double** %1, double** %2)
+  ret double %ls_lookup_table
+}
+
+; Function Attrs: alwaysinline nounwind
+define private double @"_lens_lut_3@FF"(double* %fd) #0 {
+__llvm_entry:
+  %0 = alloca double
+  %1 = alloca double*
+  %2 = alloca double*
+  %fd1 = load double, double* %fd
+  store double %fd1, double* %0
+  store double* getelementptr inbounds ([45 x double], [45 x double]* @6, i64 0, i64 0), double** %1
+  store double* getelementptr inbounds ([45 x double], [45 x double]* @7, i64 0, i64 0), double** %2
+  %ls_lookup_table = call double @"ls_lookup_table@FF[F[F"(double* %0, double** %1, double** %2)
+  ret double %ls_lookup_table
+}
+
+; Function Attrs: alwaysinline nounwind
+define private double @"_lens_lut_4@FF"(double* %fd) #0 {
+__llvm_entry:
+  %0 = alloca double
+  %1 = alloca double*
+  %2 = alloca double*
+  %fd1 = load double, double* %fd
+  store double %fd1, double* %0
+  store double* getelementptr inbounds ([49 x double], [49 x double]* @8, i64 0, i64 0), double** %1
+  store double* getelementptr inbounds ([49 x double], [49 x double]* @9, i64 0, i64 0), double** %2
+  %ls_lookup_table = call double @"ls_lookup_table@FF[F[F"(double* %0, double** %1, double** %2)
+  ret double %ls_lookup_table
+}
+
+; Function Attrs: alwaysinline nounwind
+define private void @"_lens_trace_0@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n) #0 {
+__llvm_entry:
+  %0 = alloca <3 x double>
+  %1 = alloca double
+  %2 = alloca double
+  %3 = alloca i64
+  %4 = alloca i64
+  %5 = alloca <3 x double>
+  %6 = alloca double
+  %7 = alloca i64
+  %8 = alloca <3 x double>
+  %9 = alloca double
+  %10 = alloca double
+  %11 = alloca i64
+  %12 = alloca i64
+  %13 = alloca <3 x double>
+  %14 = alloca double
+  %15 = alloca i64
+  %16 = alloca <3 x double>
+  %17 = alloca double
+  %18 = alloca double
+  %19 = alloca i64
+  %20 = alloca i64
+  %21 = alloca <3 x double>
+  %22 = alloca double
+  %23 = alloca i64
+  %24 = alloca <3 x double>
+  %25 = alloca double
+  %26 = alloca double
+  %27 = alloca i64
+  %28 = alloca i64
+  %29 = alloca <3 x double>
+  %30 = alloca double
+  %31 = alloca i64
+  %32 = alloca <3 x double>
+  %33 = alloca double
+  %34 = alloca double
+  %35 = alloca i64
+  %36 = alloca i64
+  %37 = alloca <3 x double>
+  %38 = alloca double
+  %39 = alloca i64
+  %40 = alloca <3 x double>
+  %41 = alloca double
+  %42 = alloca double
+  %43 = alloca i64
+  %44 = alloca i64
+  %45 = alloca <3 x double>
+  %46 = alloca double
+  %47 = alloca i64
+  %48 = alloca <3 x double>
+  %49 = alloca double
+  %50 = alloca double
+  %51 = alloca i64
+  %52 = alloca i64
+  %53 = alloca <3 x double>
+  %54 = alloca double
+  %55 = alloca i64
+  %56 = alloca <3 x double>
+  %57 = alloca double
+  %58 = alloca double
+  %59 = alloca i64
+  %60 = alloca i64
+  %61 = alloca <3 x double>
+  %62 = alloca double
+  %63 = alloca i64
+  %64 = alloca <3 x double>
+  %65 = alloca double
+  %66 = alloca double
+  %67 = alloca i64
+  %68 = alloca i64
+  %69 = alloca <3 x double>
+  %70 = alloca double
+  %71 = alloca i64
+  %72 = alloca <3 x double>
+  %73 = alloca double
+  %74 = alloca double
+  %75 = alloca i64
+  %76 = alloca i64
+  %77 = alloca <3 x double>
+  %78 = alloca double
+  %79 = alloca i64
+  %80 = alloca <3 x double>
+  %81 = alloca double
+  %82 = alloca double
+  %83 = alloca i64
+  %84 = alloca i64
+  %85 = alloca <3 x double>
+  %86 = alloca double
+  %87 = alloca i64
+  %88 = alloca <3 x double>
+  %89 = alloca double
+  %90 = alloca double
+  %91 = alloca i64
+  %92 = alloca i64
+  %93 = alloca <3 x double>
+  %94 = alloca double
+  %95 = alloca i64
+  %96 = alloca <3 x double>
+  %97 = alloca double
+  %98 = alloca double
+  %99 = alloca i64
+  %100 = alloca i64
+  %101 = alloca <3 x double>
+  %102 = alloca double
+  %103 = alloca i64
+  %104 = alloca <3 x double>
+  %105 = alloca double
+  %106 = alloca double
+  %107 = alloca i64
+  %108 = alloca i64
+  %109 = alloca <3 x double>
+  %110 = alloca double
+  %111 = alloca i64
+  %112 = alloca <3 x double>
+  %113 = alloca double
+  %114 = alloca double
+  %115 = alloca i64
+  %116 = alloca i64
+  %117 = alloca <3 x double>
+  %118 = alloca double
+  %119 = alloca i64
+  %120 = alloca <3 x double>
+  %121 = alloca double
+  %122 = alloca double
+  %123 = alloca i64
+  %124 = alloca i64
+  %125 = alloca <3 x double>
+  %126 = alloca double
+  %127 = alloca i64
+  %128 = alloca <3 x double>
+  %129 = alloca double
+  %130 = alloca double
+  %131 = alloca i64
+  %132 = alloca i64
+  %133 = alloca <3 x double>
+  %134 = alloca double
+  %135 = alloca i64
+  %136 = alloca <3 x double>
+  %137 = alloca double
+  %138 = alloca double
+  %139 = alloca i64
+  %140 = alloca i64
+  %141 = alloca <3 x double>
+  %142 = alloca double
+  %143 = alloca i64
+  %144 = alloca <3 x double>
+  %145 = alloca double
+  %146 = alloca double
+  %147 = alloca i64
+  %148 = alloca i64
+  %149 = alloca <3 x double>
+  %150 = alloca double
+  %151 = alloca i64
+  %152 = alloca <3 x double>
+  %153 = alloca double
+  %154 = alloca double
+  %155 = alloca i64
+  %156 = alloca i64
+  %157 = alloca <3 x double>
+  %158 = alloca double
+  %159 = alloca i64
+  %160 = alloca <3 x double>
+  %161 = alloca double
+  %162 = alloca double
+  %163 = alloca i64
+  %164 = alloca i64
+  %165 = alloca <3 x double>
+  %166 = alloca double
+  %167 = alloca i64
+  %168 = alloca <3 x double>
+  %169 = alloca double
+  %170 = alloca double
+  %171 = alloca i64
+  %172 = alloca i64
+  %173 = alloca <3 x double>
+  %174 = alloca double
+  %175 = alloca i64
+  %176 = alloca <3 x double>
+  %177 = alloca double
+  %178 = alloca double
+  %179 = alloca i64
+  %180 = alloca i64
+  %181 = alloca <3 x double>
+  %182 = alloca double
+  %183 = alloca i64
+  %184 = alloca <3 x double>
+  %185 = alloca double
+  %186 = alloca double
+  %187 = alloca i64
+  %188 = alloca i64
+  %189 = alloca <3 x double>
+  %190 = alloca double
+  %191 = alloca i64
+  %192 = alloca <3 x double>
+  %193 = alloca double
+  %194 = alloca double
+  %195 = alloca i64
+  %196 = alloca i64
+  %197 = alloca <3 x double>
+  %198 = alloca double
+  %199 = alloca i64
+  %200 = alloca <3 x double>
+  %201 = alloca double
+  %202 = alloca double
+  %203 = alloca i64
+  %204 = alloca i64
+  %205 = alloca <3 x double>
+  %206 = alloca double
+  %207 = alloca i64
+  %208 = alloca <3 x double>
+  %209 = alloca double
+  %210 = alloca double
+  %211 = alloca i64
+  %212 = alloca i64
+  %213 = alloca <3 x double>
+  %214 = alloca double
+  %215 = alloca i64
+  %216 = alloca <3 x double>
+  %217 = alloca double
+  %218 = alloca double
+  %219 = alloca i64
+  %220 = alloca i64
+  %221 = alloca <3 x double>
+  %222 = alloca double
+  %223 = alloca i64
+  %224 = alloca <3 x double>
+  %225 = alloca double
+  %226 = alloca double
+  %227 = alloca i64
+  %228 = alloca i64
+  %229 = alloca <3 x double>
+  %230 = alloca double
+  %231 = alloca i64
+  %232 = alloca <3 x double>
+  %233 = alloca double
+  %234 = alloca double
+  %235 = alloca i64
+  %236 = alloca i64
+  %237 = alloca <3 x double>
+  %238 = alloca double
+  %239 = alloca i64
+  %240 = alloca <3 x double>
+  %241 = alloca double
+  %242 = alloca double
+  %243 = alloca i64
+  %244 = alloca i64
+  %245 = alloca <3 x double>
+  %246 = alloca double
+  %247 = alloca i64
+  %248 = alloca <3 x double>
+  %249 = alloca double
+  %250 = alloca double
+  %251 = alloca i64
+  %252 = alloca i64
+  %253 = alloca <3 x double>
+  %254 = alloca double
+  %255 = alloca i64
+  %ray_d1 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d1, <3 x double>* %0
+  store double 1.000000e-03, double* %1
+  %return = call double @"neg@FF"(double 0x3FBB1E3A7EF42A49)
+  store double %return, double* %2
+  store i64 0, i64* %3
+  store i64 0, i64* %4
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %0, double* %1, double* %2, <3 x double>* %surface_n, <3 x double>* %_T, i64* %3, i64* %4)
+  %surface_n3 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n3, <3 x double>* %5
+  store double 1.625410e+00, double* %6
+  store i64 0, i64* %7
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %5, double* %6, <3 x double>* %_T, i64* %7)
+  %ray_d5 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d5, <3 x double>* %8
+  store double 0x3F826E978D4FDF3C, double* %9
+  store double 0x3FA4FA4830F660FE, double* %10
+  store i64 1, i64* %11
+  store i64 1, i64* %12
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %8, double* %9, double* %10, <3 x double>* %surface_n, <3 x double>* %_T, i64* %11, i64* %12)
+  %ray_p7 = load <3 x double>, <3 x double>* %ray_p
+  %return8 = call <3 x double> @"set@VFFF"(double 1.000000e+00, double 1.000000e+00, double 0.000000e+00)
+  %output9 = call <3 x double> @"mul@VV"(<3 x double> %ray_p7, <3 x double> %return8)
+  %return10 = call double @"length@FV"(<3 x double> %output9)
+  %return11 = fcmp ogt double %return10, 0x3F7D68C688A81437
+  br i1 %return11, label %true, label %end
+
+true:                                             ; preds = %__llvm_entry
+  %return13 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return13, <3 x double>* %_T
+  br label %end
+
+end:                                              ; preds = %true, %__llvm_entry
+  %surface_n14 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n14, <3 x double>* %13
+  store double 1.625410e+00, double* %14
+  store i64 1, i64* %15
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %13, double* %14, <3 x double>* %_T, i64* %15)
+  %ray_d17 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d17, <3 x double>* %16
+  store double 2.100000e-02, double* %17
+  %return19 = call double @"neg@FF"(double 0x3FA4FA4830F660FE)
+  store double %return19, double* %18
+  store i64 0, i64* %19
+  store i64 0, i64* %20
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %16, double* %17, double* %18, <3 x double>* %surface_n, <3 x double>* %_T, i64* %19, i64* %20)
+  %surface_n20 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n20, <3 x double>* %21
+  store double 1.524580e+00, double* %22
+  store i64 0, i64* %23
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %21, double* %22, <3 x double>* %_T, i64* %23)
+  %ray_d23 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d23, <3 x double>* %24
+  store double 2.900000e-02, double* %25
+  store double 0x3F86A6A020180EC5, double* %26
+  store i64 1, i64* %27
+  store i64 1, i64* %28
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %24, double* %25, double* %26, <3 x double>* %surface_n, <3 x double>* %_T, i64* %27, i64* %28)
+  %ray_p25 = load <3 x double>, <3 x double>* %ray_p
+  %output27 = call <3 x double> @"mul@VV"(<3 x double> %ray_p25, <3 x double> %return8)
+  %return28 = call double @"length@FV"(<3 x double> %output27)
+  %return29 = fcmp ogt double %return28, 0x3F7AE924FC76A41B
+  br i1 %return29, label %true31, label %end32
+
+true31:                                           ; preds = %end
+  %return33 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return33, <3 x double>* %_T
+  br label %end32
+
+end32:                                            ; preds = %true31, %end
+  %surface_n34 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n34, <3 x double>* %29
+  store double 1.524580e+00, double* %30
+  store i64 1, i64* %31
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %29, double* %30, <3 x double>* %_T, i64* %31)
+  %ray_d35 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d35, <3 x double>* %32
+  store double 2.900000e-02, double* %33
+  store double 0x3F86A6A020180EC5, double* %34
+  store i64 1, i64* %35
+  store i64 0, i64* %36
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %32, double* %33, double* %34, <3 x double>* %surface_n, <3 x double>* %_T, i64* %35, i64* %36)
+  %surface_n37 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n37, <3 x double>* %37
+  store double 1.723110e+00, double* %38
+  store i64 0, i64* %39
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %37, double* %38, <3 x double>* %_T, i64* %39)
+  %ray_d40 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d40, <3 x double>* %40
+  store double 0x3FA2F1A9FBE76C8C, double* %41
+  %return42 = call double @"neg@FF"(double 0x3F96C1E374350464)
+  store double %return42, double* %42
+  store i64 0, i64* %43
+  store i64 1, i64* %44
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %40, double* %41, double* %42, <3 x double>* %surface_n, <3 x double>* %_T, i64* %43, i64* %44)
+  %ray_p43 = load <3 x double>, <3 x double>* %ray_p
+  %output45 = call <3 x double> @"mul@VV"(<3 x double> %ray_p43, <3 x double> %return8)
+  %return46 = call double @"length@FV"(<3 x double> %output45)
+  %return47 = fcmp ogt double %return46, 0x3F7AE924FC76A41B
+  br i1 %return47, label %true49, label %end50
+
+true49:                                           ; preds = %end32
+  %return51 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return51, <3 x double>* %_T
+  br label %end50
+
+end50:                                            ; preds = %true49, %end32
+  %surface_n52 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n52, <3 x double>* %45
+  store double 1.723110e+00, double* %46
+  store i64 1, i64* %47
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %45, double* %46, <3 x double>* %_T, i64* %47)
+  %ray_d55 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d55, <3 x double>* %48
+  store double 0x3FA38EF34D6A161F, double* %49
+  %return57 = call double @"neg@FF"(double 0x3FAD6B65A1ECE5A1)
+  store double %return57, double* %50
+  store i64 0, i64* %51
+  store i64 0, i64* %52
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %48, double* %49, double* %50, <3 x double>* %surface_n, <3 x double>* %_T, i64* %51, i64* %52)
+  %surface_n58 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n58, <3 x double>* %53
+  store double 0x3FF922532BF6FECF, double* %54
+  store i64 0, i64* %55
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %53, double* %54, <3 x double>* %_T, i64* %55)
+  %ray_d61 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d61, <3 x double>* %56
+  store double 0x3FA41205BC01A36F, double* %57
+  %return63 = call double @"neg@FF"(double 0x3F8A57EA9F310D5D)
+  store double %return63, double* %58
+  store i64 0, i64* %59
+  store i64 1, i64* %60
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %56, double* %57, double* %58, <3 x double>* %surface_n, <3 x double>* %_T, i64* %59, i64* %60)
+  %ray_p64 = load <3 x double>, <3 x double>* %ray_p
+  %output66 = call <3 x double> @"mul@VV"(<3 x double> %ray_p64, <3 x double> %return8)
+  %return67 = call double @"length@FV"(<3 x double> %output66)
+  %return68 = fcmp ogt double %return67, 0x3F7FE8683056642F
+  br i1 %return68, label %true70, label %end71
+
+true70:                                           ; preds = %end50
+  %return72 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return72, <3 x double>* %_T
+  br label %end71
+
+end71:                                            ; preds = %true70, %end50
+  %surface_n73 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n73, <3 x double>* %61
+  store double 0x3FF922532BF6FECF, double* %62
+  store i64 1, i64* %63
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %61, double* %62, <3 x double>* %_T, i64* %63)
+  %ray_d74 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d74, <3 x double>* %64
+  store double 0x3FA41205BC01A36F, double* %65
+  store double %return63, double* %66
+  store i64 0, i64* %67
+  store i64 0, i64* %68
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %64, double* %65, double* %66, <3 x double>* %surface_n, <3 x double>* %_T, i64* %67, i64* %68)
+  %surface_n77 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n77, <3 x double>* %69
+  store double 1.625410e+00, double* %70
+  store i64 0, i64* %71
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %69, double* %70, <3 x double>* %_T, i64* %71)
+  %ray_d80 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d80, <3 x double>* %72
+  store double 0x3FA8ADAB9F559B3E, double* %73
+  store double 0x3F93B53937781F1D, double* %74
+  store i64 1, i64* %75
+  store i64 1, i64* %76
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %72, double* %73, double* %74, <3 x double>* %surface_n, <3 x double>* %_T, i64* %75, i64* %76)
+  %ray_p82 = load <3 x double>, <3 x double>* %ray_p
+  %output84 = call <3 x double> @"mul@VV"(<3 x double> %ray_p82, <3 x double> %return8)
+  %return85 = call double @"length@FV"(<3 x double> %output84)
+  %return86 = fcmp ogt double %return85, 0x3F7FE8683056642F
+  br i1 %return86, label %true88, label %end89
+
+true88:                                           ; preds = %end71
+  %return90 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return90, <3 x double>* %_T
+  br label %end89
+
+end89:                                            ; preds = %true88, %end71
+  %surface_n91 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n91, <3 x double>* %77
+  store double 1.625410e+00, double* %78
+  store i64 1, i64* %79
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %77, double* %78, <3 x double>* %_T, i64* %79)
+  %ray_d94 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d94, <3 x double>* %80
+  store double 0x3FAA36E2EB1C432E, double* %81
+  %return96 = call double @"neg@FF"(double 0x3F9E22E5E33D3466)
+  store double %return96, double* %82
+  store i64 0, i64* %83
+  store i64 0, i64* %84
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %80, double* %81, double* %82, <3 x double>* %surface_n, <3 x double>* %_T, i64* %83, i64* %84)
+  %surface_n97 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n97, <3 x double>* %85
+  store double 1.625410e+00, double* %86
+  store i64 0, i64* %87
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %85, double* %86, <3 x double>* %_T, i64* %87)
+  %ray_p98 = load <3 x double>, <3 x double>* %ray_p
+  %output100 = call <3 x double> @"mul@VV"(<3 x double> %ray_p98, <3 x double> %return8)
+  %return101 = call double @"length@FV"(<3 x double> %output100)
+  %return102 = fcmp ogt double %return101, 0x3F7FA76541F5AF1F
+  br i1 %return102, label %true104, label %end105
+
+true104:                                          ; preds = %end89
+  %return106 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return106, <3 x double>* %_T
+  br label %end105
+
+end105:                                           ; preds = %true104, %end89
+  %ray_d109 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d109, <3 x double>* %88
+  store double 0x3FABC01A36E2EB1E, double* %89
+  store double 0x3FB7503B8525EA00, double* %90
+  store i64 1, i64* %91
+  store i64 1, i64* %92
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %88, double* %89, double* %90, <3 x double>* %surface_n, <3 x double>* %_T, i64* %91, i64* %92)
+  %ray_p111 = load <3 x double>, <3 x double>* %ray_p
+  %output113 = call <3 x double> @"mul@VV"(<3 x double> %ray_p111, <3 x double> %return8)
+  %return114 = call double @"length@FV"(<3 x double> %output113)
+  %return115 = fcmp ogt double %return114, 7.750000e-03
+  br i1 %return115, label %true117, label %end118
+
+true117:                                          ; preds = %end105
+  %return119 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return119, <3 x double>* %_T
+  br label %end118
+
+end118:                                           ; preds = %true117, %end105
+  %surface_n120 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n120, <3 x double>* %93
+  store double 1.625410e+00, double* %94
+  store i64 1, i64* %95
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %93, double* %94, <3 x double>* %_T, i64* %95)
+  %ray_d121 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d121, <3 x double>* %96
+  store double 0x3FABC01A36E2EB1E, double* %97
+  %return123 = call double @"neg@FF"(double 0x3FC4E1F7CEDC8623)
+  store double %return123, double* %98
+  store i64 0, i64* %99
+  store i64 0, i64* %100
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %96, double* %97, double* %98, <3 x double>* %surface_n, <3 x double>* %_T, i64* %99, i64* %100)
+  %surface_n124 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n124, <3 x double>* %101
+  store double 1.723110e+00, double* %102
+  store i64 0, i64* %103
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %101, double* %102, <3 x double>* %_T, i64* %103)
+  %ray_d127 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d127, <3 x double>* %104
+  store double 0x3FAD07C84B5DCC66, double* %105
+  store double 0x3FA04EC634F8C838, double* %106
+  store i64 1, i64* %107
+  store i64 1, i64* %108
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %104, double* %105, double* %106, <3 x double>* %surface_n, <3 x double>* %_T, i64* %107, i64* %108)
+  %ray_p129 = load <3 x double>, <3 x double>* %ray_p
+  %output131 = call <3 x double> @"mul@VV"(<3 x double> %ray_p129, <3 x double> %return8)
+  %return132 = call double @"length@FV"(<3 x double> %output131)
+  %return133 = fcmp ogt double %return132, 0x3F7D638873531F3D
+  br i1 %return133, label %true135, label %end136
+
+true135:                                          ; preds = %end118
+  %return137 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return137, <3 x double>* %_T
+  br label %end136
+
+end136:                                           ; preds = %true135, %end118
+  %surface_n138 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n138, <3 x double>* %109
+  store double 1.723110e+00, double* %110
+  store i64 1, i64* %111
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %109, double* %110, <3 x double>* %_T, i64* %111)
+  %ray_d139 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d139, <3 x double>* %112
+  store double 0x3FAD07C84B5DCC66, double* %113
+  store double 0x3FA04EC634F8C838, double* %114
+  store i64 1, i64* %115
+  store i64 0, i64* %116
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %112, double* %113, double* %114, <3 x double>* %surface_n, <3 x double>* %_T, i64* %115, i64* %116)
+  %ray_p141 = load <3 x double>, <3 x double>* %ray_p
+  %output143 = call <3 x double> @"mul@VV"(<3 x double> %ray_p141, <3 x double> %return8)
+  %return144 = call double @"length@FV"(<3 x double> %output143)
+  %return145 = fcmp ogt double %return144, 0x3F7D638873531F3D
+  br i1 %return145, label %true147, label %end148
+
+true147:                                          ; preds = %end136
+  %return149 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return149, <3 x double>* %_T
+  br label %end148
+
+end148:                                           ; preds = %true147, %end136
+  %surface_n150 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n150, <3 x double>* %117
+  store double 0x3FFB75644B033391, double* %118
+  store i64 0, i64* %119
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %117, double* %118, <3 x double>* %_T, i64* %119)
+  %ray_d153 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d153, <3 x double>* %120
+  store double 0x3FAD70A3D70A3D73, double* %121
+  %return155 = call double @"neg@FF"(double 0x3F9A187A3E42577F)
+  store double %return155, double* %122
+  store i64 0, i64* %123
+  store i64 1, i64* %124
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %120, double* %121, double* %122, <3 x double>* %surface_n, <3 x double>* %_T, i64* %123, i64* %124)
+  %ray_p156 = load <3 x double>, <3 x double>* %ray_p
+  %output158 = call <3 x double> @"mul@VV"(<3 x double> %ray_p156, <3 x double> %return8)
+  %return159 = call double @"length@FV"(<3 x double> %output158)
+  %return160 = fcmp ogt double %return159, 0x3F7AEE6311CB9916
+  br i1 %return160, label %true162, label %end163
+
+true162:                                          ; preds = %end148
+  %return164 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return164, <3 x double>* %_T
+  br label %end163
+
+end163:                                           ; preds = %true162, %end148
+  %surface_n165 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n165, <3 x double>* %125
+  store double 0x3FFB75644B033391, double* %126
+  store i64 1, i64* %127
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %125, double* %126, <3 x double>* %_T, i64* %127)
+  %ray_d168 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d168, <3 x double>* %128
+  store double 0x3FBAC82E042EBFB0, double* %129
+  store double 0x3FA6DE7645EC184E, double* %130
+  store i64 1, i64* %131
+  store i64 0, i64* %132
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %128, double* %129, double* %130, <3 x double>* %surface_n, <3 x double>* %_T, i64* %131, i64* %132)
+  %surface_n170 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n170, <3 x double>* %133
+  store double 1.791800e+00, double* %134
+  store i64 0, i64* %135
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %133, double* %134, <3 x double>* %_T, i64* %135)
+  %ray_d173 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d173, <3 x double>* %136
+  store double 0x3FBB7292C6B903E5, double* %137
+  store double 0x3F95CBFF3B6CBA29, double* %138
+  store i64 1, i64* %139
+  store i64 1, i64* %140
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %136, double* %137, double* %138, <3 x double>* %surface_n, <3 x double>* %_T, i64* %139, i64* %140)
+  %ray_p175 = load <3 x double>, <3 x double>* %ray_p
+  %output177 = call <3 x double> @"mul@VV"(<3 x double> %ray_p175, <3 x double> %return8)
+  %return178 = call double @"length@FV"(<3 x double> %output177)
+  %return179 = fcmp ogt double %return178, 0x3F82E72D91ACBCED
+  br i1 %return179, label %true181, label %end182
+
+true181:                                          ; preds = %end163
+  %return183 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return183, <3 x double>* %_T
+  br label %end182
+
+end182:                                           ; preds = %true181, %end163
+  %surface_n184 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n184, <3 x double>* %141
+  store double 1.791800e+00, double* %142
+  store i64 1, i64* %143
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %141, double* %142, <3 x double>* %_T, i64* %143)
+  %ray_d187 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d187, <3 x double>* %144
+  store double 0x3FBC57F308423B31, double* %145
+  store double 0x3F936CDF1A6502A5, double* %146
+  store i64 1, i64* %147
+  store i64 0, i64* %148
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %144, double* %145, double* %146, <3 x double>* %surface_n, <3 x double>* %_T, i64* %147, i64* %148)
+  %ray_p189 = load <3 x double>, <3 x double>* %ray_p
+  %output191 = call <3 x double> @"mul@VV"(<3 x double> %ray_p189, <3 x double> %return8)
+  %return192 = call double @"length@FV"(<3 x double> %output191)
+  %return193 = fcmp ogt double %return192, 0x3F82CCF6C886B285
+  br i1 %return193, label %true195, label %end196
+
+true195:                                          ; preds = %end182
+  %return197 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return197, <3 x double>* %_T
+  br label %end196
+
+end196:                                           ; preds = %true195, %end182
+  %surface_n198 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n198, <3 x double>* %149
+  store double 0x3FFB75644B033391, double* %150
+  store i64 0, i64* %151
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %149, double* %150, <3 x double>* %_T, i64* %151)
+  %ray_d201 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d201, <3 x double>* %152
+  store double 0x3FBC8C60CE1873B7, double* %153
+  %return203 = call double @"neg@FF"(double 0x3FA461D851DA2019)
+  store double %return203, double* %154
+  store i64 0, i64* %155
+  store i64 1, i64* %156
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %152, double* %153, double* %154, <3 x double>* %surface_n, <3 x double>* %_T, i64* %155, i64* %156)
+  %ray_p204 = load <3 x double>, <3 x double>* %ray_p
+  %output206 = call <3 x double> @"mul@VV"(<3 x double> %ray_p204, <3 x double> %return8)
+  %return207 = call double @"length@FV"(<3 x double> %output206)
+  %return208 = fcmp ogt double %return207, 0x3F84562E144D5A75
+  br i1 %return208, label %true210, label %end211
+
+true210:                                          ; preds = %end196
+  %return212 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return212, <3 x double>* %_T
+  br label %end211
+
+end211:                                           ; preds = %true210, %end196
+  %surface_n213 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n213, <3 x double>* %157
+  store double 0x3FFB75644B033391, double* %158
+  store i64 1, i64* %159
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %157, double* %158, <3 x double>* %_T, i64* %159)
+  %ray_d214 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d214, <3 x double>* %160
+  store double 0x3FBC8C60CE1873B7, double* %161
+  store double %return203, double* %162
+  store i64 0, i64* %163
+  store i64 0, i64* %164
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %160, double* %161, double* %162, <3 x double>* %surface_n, <3 x double>* %_T, i64* %163, i64* %164)
+  %surface_n217 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n217, <3 x double>* %165
+  store double 1.791800e+00, double* %166
+  store i64 0, i64* %167
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %165, double* %166, <3 x double>* %_T, i64* %167)
+  %ray_d220 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d220, <3 x double>* %168
+  store double 0x3FBD36C590A2B7EC, double* %169
+  %return222 = call double @"neg@FF"(double 0x3FC66FF7EF843F92)
+  store double %return222, double* %170
+  store i64 0, i64* %171
+  store i64 1, i64* %172
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %168, double* %169, double* %170, <3 x double>* %surface_n, <3 x double>* %_T, i64* %171, i64* %172)
+  %ray_p223 = load <3 x double>, <3 x double>* %ray_p
+  %output225 = call <3 x double> @"mul@VV"(<3 x double> %ray_p223, <3 x double> %return8)
+  %return226 = call double @"length@FV"(<3 x double> %output225)
+  %return227 = fcmp ogt double %return226, 0x3F84562E144D5A75
+  br i1 %return227, label %true229, label %end230
+
+true229:                                          ; preds = %end211
+  %return231 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return231, <3 x double>* %_T
+  br label %end230
+
+end230:                                           ; preds = %true229, %end211
+  %surface_n232 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n232, <3 x double>* %173
+  store double 1.791800e+00, double* %174
+  store i64 1, i64* %175
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %173, double* %174, <3 x double>* %_T, i64* %175)
+  %ray_d235 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d235, <3 x double>* %176
+  store double 0x3FBE5DAF0977B5E0, double* %177
+  store double 0x3F8FFEF393F5909D, double* %178
+  store i64 1, i64* %179
+  store i64 0, i64* %180
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %176, double* %177, double* %178, <3 x double>* %surface_n, <3 x double>* %_T, i64* %179, i64* %180)
+  %ray_p237 = load <3 x double>, <3 x double>* %ray_p
+  %output239 = call <3 x double> @"mul@VV"(<3 x double> %ray_p237, <3 x double> %return8)
+  %return240 = call double @"length@FV"(<3 x double> %output239)
+  %return241 = fcmp ogt double %return240, 0x3F83E2D6254571C0
+  br i1 %return241, label %true243, label %end244
+
+true243:                                          ; preds = %end230
+  %return245 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return245, <3 x double>* %_T
+  br label %end244
+
+end244:                                           ; preds = %true243, %end230
+  %surface_n246 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n246, <3 x double>* %181
+  store double 0x3FFB75644B033391, double* %182
+  store i64 0, i64* %183
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %181, double* %182, <3 x double>* %_T, i64* %183)
+  %ray_d249 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d249, <3 x double>* %184
+  store double 0x3FBE9F3840C37C88, double* %185
+  store double 0x3FC0956C0847EA53, double* %186
+  store i64 1, i64* %187
+  store i64 1, i64* %188
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %184, double* %185, double* %186, <3 x double>* %surface_n, <3 x double>* %_T, i64* %187, i64* %188)
+  %ray_p251 = load <3 x double>, <3 x double>* %ray_p
+  %output253 = call <3 x double> @"mul@VV"(<3 x double> %ray_p251, <3 x double> %return8)
+  %return254 = call double @"length@FV"(<3 x double> %output253)
+  %return255 = fcmp ogt double %return254, 0x3F89407892A43721
+  br i1 %return255, label %true257, label %end258
+
+true257:                                          ; preds = %end244
+  %return259 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return259, <3 x double>* %_T
+  br label %end258
+
+end258:                                           ; preds = %true257, %end244
+  %surface_n260 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n260, <3 x double>* %189
+  store double 0x3FFB75644B033391, double* %190
+  store i64 1, i64* %191
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %189, double* %190, <3 x double>* %_T, i64* %191)
+  %ray_d263 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d263, <3 x double>* %192
+  store double 0x3FBEBFFCDC695FDC, double* %193
+  store double 0x3FCA4894BC55AA58, double* %194
+  store i64 1, i64* %195
+  store i64 0, i64* %196
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %192, double* %193, double* %194, <3 x double>* %surface_n, <3 x double>* %_T, i64* %195, i64* %196)
+  %surface_n265 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n265, <3 x double>* %197
+  store double 1.625410e+00, double* %198
+  store i64 0, i64* %199
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %197, double* %198, <3 x double>* %_T, i64* %199)
+  %ray_d268 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d268, <3 x double>* %200
+  store double 0x3FC01E0C5BCB3054, double* %201
+  store double 0x3FAFA02FBE6736FA, double* %202
+  store i64 1, i64* %203
+  store i64 1, i64* %204
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %200, double* %201, double* %202, <3 x double>* %surface_n, <3 x double>* %_T, i64* %203, i64* %204)
+  %ray_p270 = load <3 x double>, <3 x double>* %ray_p
+  %output272 = call <3 x double> @"mul@VV"(<3 x double> %ray_p270, <3 x double> %return8)
+  %return273 = call double @"length@FV"(<3 x double> %output272)
+  %return274 = fcmp ogt double %return273, 2.450000e-02
+  br i1 %return274, label %true276, label %end277
+
+true276:                                          ; preds = %end258
+  %return278 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return278, <3 x double>* %_T
+  br label %end277
+
+end277:                                           ; preds = %true276, %end258
+  %surface_n279 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n279, <3 x double>* %205
+  store double 1.625410e+00, double* %206
+  store i64 1, i64* %207
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %205, double* %206, <3 x double>* %_T, i64* %207)
+  %ray_d282 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d282, <3 x double>* %208
+  store double 0x3FC02153382893DC, double* %209
+  %return284 = call double @"neg@FF"(double 1.540000e+00)
+  store double %return284, double* %210
+  store i64 0, i64* %211
+  store i64 0, i64* %212
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %208, double* %209, double* %210, <3 x double>* %surface_n, <3 x double>* %_T, i64* %211, i64* %212)
+  %surface_n285 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n285, <3 x double>* %213
+  store double 1.625410e+00, double* %214
+  store i64 0, i64* %215
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %213, double* %214, <3 x double>* %_T, i64* %215)
+  %ray_d288 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d288, <3 x double>* %216
+  store double 0x3FC10025C164F796, double* %217
+  store double 0x3FB6D0C3D70BBE45, double* %218
+  store i64 1, i64* %219
+  store i64 1, i64* %220
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %216, double* %217, double* %218, <3 x double>* %surface_n, <3 x double>* %_T, i64* %219, i64* %220)
+  %ray_p290 = load <3 x double>, <3 x double>* %ray_p
+  %output292 = call <3 x double> @"mul@VV"(<3 x double> %ray_p290, <3 x double> %return8)
+  %return293 = call double @"length@FV"(<3 x double> %output292)
+  %return294 = fcmp ogt double %return293, 0x3F9BBD7B22C583AC
+  br i1 %return294, label %true296, label %end297
+
+true296:                                          ; preds = %end277
+  %return298 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return298, <3 x double>* %_T
+  br label %end297
+
+end297:                                           ; preds = %true296, %end277
+  %surface_n299 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n299, <3 x double>* %221
+  store double 1.625410e+00, double* %222
+  store i64 1, i64* %223
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %221, double* %222, <3 x double>* %_T, i64* %223)
+  %ray_d302 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d302, <3 x double>* %224
+  store double 0x3FC1036C9DC25B1E, double* %225
+  store double %return284, double* %226
+  store i64 0, i64* %227
+  store i64 0, i64* %228
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %224, double* %225, double* %226, <3 x double>* %surface_n, <3 x double>* %_T, i64* %227, i64* %228)
+  %surface_n305 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n305, <3 x double>* %229
+  store double 1.622860e+00, double* %230
+  store i64 0, i64* %231
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %229, double* %230, <3 x double>* %_T, i64* %231)
+  %ray_d308 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d308, <3 x double>* %232
+  store double 0x3FC21D3AA5FDB1EF, double* %233
+  store double 0x3FB2A6F3F7C37762, double* %234
+  store i64 1, i64* %235
+  store i64 1, i64* %236
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %232, double* %233, double* %234, <3 x double>* %surface_n, <3 x double>* %_T, i64* %235, i64* %236)
+  %ray_p310 = load <3 x double>, <3 x double>* %ray_p
+  %output312 = call <3 x double> @"mul@VV"(<3 x double> %ray_p310, <3 x double> %return8)
+  %return313 = call double @"length@FV"(<3 x double> %output312)
+  %return314 = fcmp ogt double %return313, 0x3F9BFC653F14AAED
+  br i1 %return314, label %true316, label %end317
+
+true316:                                          ; preds = %end297
+  %return318 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return318, <3 x double>* %_T
+  br label %end317
+
+end317:                                           ; preds = %true316, %end297
+  %surface_n319 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n319, <3 x double>* %237
+  store double 1.622860e+00, double* %238
+  store i64 1, i64* %239
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %237, double* %238, <3 x double>* %_T, i64* %239)
+  %ray_d322 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d322, <3 x double>* %240
+  store double 0x3FC2C111B03B2293, double* %241
+  store double 0x3FB062F5A1A2EA8A, double* %242
+  store i64 1, i64* %243
+  store i64 0, i64* %244
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %240, double* %241, double* %242, <3 x double>* %surface_n, <3 x double>* %_T, i64* %243, i64* %244)
+  %ray_p324 = load <3 x double>, <3 x double>* %ray_p
+  %output326 = call <3 x double> @"mul@VV"(<3 x double> %ray_p324, <3 x double> %return8)
+  %return327 = call double @"length@FV"(<3 x double> %output326)
+  %return328 = fcmp ogt double %return327, 0x3F9C5825602AC5CE
+  br i1 %return328, label %true330, label %end331
+
+true330:                                          ; preds = %end317
+  %return332 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return332, <3 x double>* %_T
+  br label %end331
+
+end331:                                           ; preds = %true330, %end317
+  %surface_n333 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n333, <3 x double>* %245
+  store double 1.791800e+00, double* %246
+  store i64 0, i64* %247
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %245, double* %246, <3 x double>* %_T, i64* %247)
+  %ray_d336 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d336, <3 x double>* %248
+  store double 0x3FC312FD3559DAE5, double* %249
+  store double 4.800000e-01, double* %250
+  store i64 1, i64* %251
+  store i64 1, i64* %252
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %248, double* %249, double* %250, <3 x double>* %surface_n, <3 x double>* %_T, i64* %251, i64* %252)
+  %ray_p338 = load <3 x double>, <3 x double>* %ray_p
+  %output340 = call <3 x double> @"mul@VV"(<3 x double> %ray_p338, <3 x double> %return8)
+  %return341 = call double @"length@FV"(<3 x double> %output340)
+  %return342 = fcmp ogt double %return341, 0x3F9D97F6248BAFDF
+  br i1 %return342, label %true344, label %end345
+
+true344:                                          ; preds = %end331
+  %return346 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return346, <3 x double>* %_T
+  br label %end345
+
+end345:                                           ; preds = %true344, %end331
+  %surface_n347 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n347, <3 x double>* %253
+  store double 1.791800e+00, double* %254
+  store i64 1, i64* %255
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %253, double* %254, <3 x double>* %_T, i64* %255)
+  ret void
+}
+
+; Function Attrs: nounwind
+declare double @"length@FV"(<3 x double>) #2
+
+; Function Attrs: alwaysinline nounwind
+define private void @"_lens_trace_1@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n) #0 {
+__llvm_entry:
+  %0 = alloca <3 x double>
+  %1 = alloca double
+  %2 = alloca double
+  %3 = alloca i64
+  %4 = alloca i64
+  %5 = alloca <3 x double>
+  %6 = alloca double
+  %7 = alloca i64
+  %8 = alloca <3 x double>
+  %9 = alloca double
+  %10 = alloca double
+  %11 = alloca i64
+  %12 = alloca i64
+  %13 = alloca <3 x double>
+  %14 = alloca double
+  %15 = alloca i64
+  %16 = alloca <3 x double>
+  %17 = alloca double
+  %18 = alloca double
+  %19 = alloca i64
+  %20 = alloca i64
+  %21 = alloca <3 x double>
+  %22 = alloca double
+  %23 = alloca i64
+  %24 = alloca <3 x double>
+  %25 = alloca double
+  %26 = alloca double
+  %27 = alloca i64
+  %28 = alloca i64
+  %29 = alloca <3 x double>
+  %30 = alloca double
+  %31 = alloca i64
+  %32 = alloca <3 x double>
+  %33 = alloca double
+  %34 = alloca double
+  %35 = alloca i64
+  %36 = alloca i64
+  %37 = alloca <3 x double>
+  %38 = alloca double
+  %39 = alloca i64
+  %40 = alloca <3 x double>
+  %41 = alloca double
+  %42 = alloca double
+  %43 = alloca i64
+  %44 = alloca i64
+  %45 = alloca <3 x double>
+  %46 = alloca double
+  %47 = alloca i64
+  %48 = alloca <3 x double>
+  %49 = alloca double
+  %50 = alloca double
+  %51 = alloca i64
+  %52 = alloca i64
+  %53 = alloca <3 x double>
+  %54 = alloca double
+  %55 = alloca i64
+  %56 = alloca <3 x double>
+  %57 = alloca double
+  %58 = alloca double
+  %59 = alloca i64
+  %60 = alloca i64
+  %61 = alloca <3 x double>
+  %62 = alloca double
+  %63 = alloca i64
+  %64 = alloca <3 x double>
+  %65 = alloca double
+  %66 = alloca double
+  %67 = alloca i64
+  %68 = alloca i64
+  %69 = alloca <3 x double>
+  %70 = alloca double
+  %71 = alloca i64
+  %72 = alloca <3 x double>
+  %73 = alloca double
+  %74 = alloca double
+  %75 = alloca i64
+  %76 = alloca i64
+  %77 = alloca <3 x double>
+  %78 = alloca double
+  %79 = alloca i64
+  %ray_d1 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d1, <3 x double>* %0
+  store double 1.000000e-03, double* %1
+  store double 0x3FBE3497AE3C50DA, double* %2
+  store i64 1, i64* %3
+  store i64 0, i64* %4
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %0, double* %1, double* %2, <3 x double>* %surface_n, <3 x double>* %_T, i64* %3, i64* %4)
+  %surface_n3 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n3, <3 x double>* %5
+  store double 1.568700e+00, double* %6
+  store i64 0, i64* %7
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %5, double* %6, <3 x double>* %_T, i64* %7)
+  %ray_d5 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d5, <3 x double>* %8
+  store double 4.700000e-03, double* %9
+  store double 1.000000e+01, double* %10
+  store i64 1, i64* %11
+  store i64 1, i64* %12
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %8, double* %9, double* %10, <3 x double>* %surface_n, <3 x double>* %_T, i64* %11, i64* %12)
+  %ray_p7 = load <3 x double>, <3 x double>* %ray_p
+  %return = call <3 x double> @"set@VFFF"(double 1.000000e+00, double 1.000000e+00, double 0.000000e+00)
+  %output8 = call <3 x double> @"mul@VV"(<3 x double> %ray_p7, <3 x double> %return)
+  %return9 = call double @"length@FV"(<3 x double> %output8)
+  %return10 = fcmp ogt double %return9, 0x3F96C376043AB893
+  br i1 %return10, label %true, label %end
+
+true:                                             ; preds = %__llvm_entry
+  %return12 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return12, <3 x double>* %_T
+  br label %end
+
+end:                                              ; preds = %true, %__llvm_entry
+  %surface_n13 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n13, <3 x double>* %13
+  store double 1.568700e+00, double* %14
+  store i64 1, i64* %15
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %13, double* %14, <3 x double>* %_T, i64* %15)
+  %ray_d16 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d16, <3 x double>* %16
+  store double 5.200000e-03, double* %17
+  store double 0x3FE4F78FDF3AF667, double* %18
+  store i64 1, i64* %19
+  store i64 0, i64* %20
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %16, double* %17, double* %18, <3 x double>* %surface_n, <3 x double>* %_T, i64* %19, i64* %20)
+  %surface_n18 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n18, <3 x double>* %21
+  store double 1.699000e+00, double* %22
+  store i64 0, i64* %23
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %21, double* %22, <3 x double>* %_T, i64* %23)
+  %ray_d21 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d21, <3 x double>* %24
+  store double 8.190000e-03, double* %25
+  store double 0x3FCEA0BA1CB769E6, double* %26
+  store i64 1, i64* %27
+  store i64 1, i64* %28
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %24, double* %25, double* %26, <3 x double>* %surface_n, <3 x double>* %_T, i64* %27, i64* %28)
+  %ray_p23 = load <3 x double>, <3 x double>* %ray_p
+  %output25 = call <3 x double> @"mul@VV"(<3 x double> %ray_p23, <3 x double> %return)
+  %return26 = call double @"length@FV"(<3 x double> %output25)
+  %return27 = fcmp ogt double %return26, 0x3F96C376043AB893
+  br i1 %return27, label %true29, label %end30
+
+true29:                                           ; preds = %end
+  %return31 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return31, <3 x double>* %_T
+  br label %end30
+
+end30:                                            ; preds = %true29, %end
+  %surface_n32 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n32, <3 x double>* %29
+  store double 1.699000e+00, double* %30
+  store i64 1, i64* %31
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %29, double* %30, <3 x double>* %_T, i64* %31)
+  %ray_d35 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d35, <3 x double>* %32
+  store double 0x3FD652E7285E3C22, double* %33
+  %return37 = call double @"neg@FF"(double 0x3FF21B520C469D39)
+  store double %return37, double* %34
+  store i64 0, i64* %35
+  store i64 0, i64* %36
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %32, double* %33, double* %34, <3 x double>* %surface_n, <3 x double>* %_T, i64* %35, i64* %36)
+  %surface_n38 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n38, <3 x double>* %37
+  store double 1.781700e+00, double* %38
+  store i64 0, i64* %39
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %37, double* %38, <3 x double>* %_T, i64* %39)
+  %ray_p39 = load <3 x double>, <3 x double>* %ray_p
+  %output41 = call <3 x double> @"mul@VV"(<3 x double> %ray_p39, <3 x double> %return)
+  %return42 = call double @"length@FV"(<3 x double> %output41)
+  %return43 = fcmp ogt double %return42, 0x3F8ECE13F81926A4
+  br i1 %return43, label %true45, label %end46
+
+true45:                                           ; preds = %end30
+  %return47 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return47, <3 x double>* %_T
+  br label %end46
+
+end46:                                            ; preds = %true45, %end30
+  %ray_d50 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d50, <3 x double>* %40
+  store double 0x3FD72BFDAF893E2E, double* %41
+  store double 0x3FC10DAE35305926, double* %42
+  store i64 1, i64* %43
+  store i64 1, i64* %44
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %40, double* %41, double* %42, <3 x double>* %surface_n, <3 x double>* %_T, i64* %43, i64* %44)
+  %ray_p52 = load <3 x double>, <3 x double>* %ray_p
+  %output54 = call <3 x double> @"mul@VV"(<3 x double> %ray_p52, <3 x double> %return)
+  %return55 = call double @"length@FV"(<3 x double> %output54)
+  %return56 = fcmp ogt double %return55, 0x3FAB61BB021D5C4A
+  br i1 %return56, label %true58, label %end59
+
+true58:                                           ; preds = %end46
+  %return60 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return60, <3 x double>* %_T
+  br label %end59
+
+end59:                                            ; preds = %true58, %end46
+  %surface_n61 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n61, <3 x double>* %45
+  store double 1.781700e+00, double* %46
+  store i64 1, i64* %47
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %45, double* %46, <3 x double>* %_T, i64* %47)
+  %ray_d64 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d64, <3 x double>* %48
+  store double 0x3FD74E3BC7D744A0, double* %49
+  store double 0x3FC08F322D04E318, double* %50
+  store i64 1, i64* %51
+  store i64 0, i64* %52
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %48, double* %49, double* %50, <3 x double>* %surface_n, <3 x double>* %_T, i64* %51, i64* %52)
+  %surface_n66 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n66, <3 x double>* %53
+  store double 1.755200e+00, double* %54
+  store i64 0, i64* %55
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %53, double* %54, <3 x double>* %_T, i64* %55)
+  %ray_d69 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d69, <3 x double>* %56
+  store double 0x3FD7D14E366ED1F0, double* %57
+  %return71 = call double @"neg@FF"(double 0x3FCE7A6374B6B9A5)
+  store double %return71, double* %58
+  store i64 0, i64* %59
+  store i64 1, i64* %60
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %56, double* %57, double* %58, <3 x double>* %surface_n, <3 x double>* %_T, i64* %59, i64* %60)
+  %ray_p72 = load <3 x double>, <3 x double>* %ray_p
+  %output74 = call <3 x double> @"mul@VV"(<3 x double> %ray_p72, <3 x double> %return)
+  %return75 = call double @"length@FV"(<3 x double> %output74)
+  %return76 = fcmp ogt double %return75, 0x3FAB61BB021D5C4A
+  br i1 %return76, label %true78, label %end79
+
+true78:                                           ; preds = %end59
+  %return80 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return80, <3 x double>* %_T
+  br label %end79
+
+end79:                                            ; preds = %true78, %end59
+  %surface_n81 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n81, <3 x double>* %61
+  store double 1.755200e+00, double* %62
+  store i64 1, i64* %63
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %61, double* %62, <3 x double>* %_T, i64* %63)
+  %ray_d84 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d84, <3 x double>* %64
+  store double 0x3FD7D3996A49CACF, double* %65
+  %return86 = call double @"neg@FF"(double 2.297500e-01)
+  store double %return86, double* %66
+  store i64 0, i64* %67
+  store i64 0, i64* %68
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %64, double* %65, double* %66, <3 x double>* %surface_n, <3 x double>* %_T, i64* %67, i64* %68)
+  %surface_n87 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n87, <3 x double>* %69
+  store double 1.618000e+00, double* %70
+  store i64 0, i64* %71
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %69, double* %70, <3 x double>* %_T, i64* %71)
+  %ray_d90 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d90, <3 x double>* %72
+  store double 0x3FD8B0F2768B94CC, double* %73
+  store double 0x3FD85EDD0E49AB00, double* %74
+  store i64 1, i64* %75
+  store i64 1, i64* %76
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %72, double* %73, double* %74, <3 x double>* %surface_n, <3 x double>* %_T, i64* %75, i64* %76)
+  %ray_p92 = load <3 x double>, <3 x double>* %ray_p
+  %output94 = call <3 x double> @"mul@VV"(<3 x double> %ray_p92, <3 x double> %return)
+  %return95 = call double @"length@FV"(<3 x double> %output94)
+  %return96 = fcmp ogt double %return95, 0x3FAB61BB021D5C4A
+  br i1 %return96, label %true98, label %end99
+
+true98:                                           ; preds = %end79
+  %return100 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return100, <3 x double>* %_T
+  br label %end99
+
+end99:                                            ; preds = %true98, %end79
+  %surface_n101 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n101, <3 x double>* %77
+  store double 1.618000e+00, double* %78
+  store i64 1, i64* %79
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %77, double* %78, <3 x double>* %_T, i64* %79)
+  ret void
+}
+
+; Function Attrs: alwaysinline nounwind
+define private void @"_lens_trace_2@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n) #0 {
+__llvm_entry:
+  %0 = alloca <3 x double>
+  %1 = alloca double
+  %2 = alloca double
+  %3 = alloca i64
+  %4 = alloca i64
+  %5 = alloca <3 x double>
+  %6 = alloca double
+  %7 = alloca i64
+  %8 = alloca <3 x double>
+  %9 = alloca double
+  %10 = alloca double
+  %11 = alloca i64
+  %12 = alloca i64
+  %13 = alloca <3 x double>
+  %14 = alloca double
+  %15 = alloca i64
+  %16 = alloca <3 x double>
+  %17 = alloca double
+  %18 = alloca double
+  %19 = alloca i64
+  %20 = alloca i64
+  %21 = alloca <3 x double>
+  %22 = alloca double
+  %23 = alloca i64
+  %24 = alloca <3 x double>
+  %25 = alloca double
+  %26 = alloca double
+  %27 = alloca i64
+  %28 = alloca i64
+  %29 = alloca <3 x double>
+  %30 = alloca double
+  %31 = alloca i64
+  %32 = alloca <3 x double>
+  %33 = alloca double
+  %34 = alloca double
+  %35 = alloca i64
+  %36 = alloca i64
+  %37 = alloca <3 x double>
+  %38 = alloca double
+  %39 = alloca i64
+  %40 = alloca <3 x double>
+  %41 = alloca double
+  %42 = alloca double
+  %43 = alloca i64
+  %44 = alloca i64
+  %45 = alloca <3 x double>
+  %46 = alloca double
+  %47 = alloca i64
+  %48 = alloca <3 x double>
+  %49 = alloca double
+  %50 = alloca double
+  %51 = alloca i64
+  %52 = alloca i64
+  %53 = alloca <3 x double>
+  %54 = alloca double
+  %55 = alloca i64
+  %56 = alloca <3 x double>
+  %57 = alloca double
+  %58 = alloca double
+  %59 = alloca i64
+  %60 = alloca i64
+  %61 = alloca <3 x double>
+  %62 = alloca double
+  %63 = alloca i64
+  %64 = alloca <3 x double>
+  %65 = alloca double
+  %66 = alloca double
+  %67 = alloca i64
+  %68 = alloca i64
+  %69 = alloca <3 x double>
+  %70 = alloca double
+  %71 = alloca i64
+  %72 = alloca <3 x double>
+  %73 = alloca double
+  %74 = alloca double
+  %75 = alloca i64
+  %76 = alloca i64
+  %77 = alloca <3 x double>
+  %78 = alloca double
+  %79 = alloca i64
+  %80 = alloca <3 x double>
+  %81 = alloca double
+  %82 = alloca double
+  %83 = alloca i64
+  %84 = alloca i64
+  %85 = alloca <3 x double>
+  %86 = alloca double
+  %87 = alloca i64
+  %88 = alloca <3 x double>
+  %89 = alloca double
+  %90 = alloca double
+  %91 = alloca i64
+  %92 = alloca i64
+  %93 = alloca <3 x double>
+  %94 = alloca double
+  %95 = alloca i64
+  %96 = alloca <3 x double>
+  %97 = alloca double
+  %98 = alloca double
+  %99 = alloca i64
+  %100 = alloca i64
+  %101 = alloca <3 x double>
+  %102 = alloca double
+  %103 = alloca i64
+  %104 = alloca <3 x double>
+  %105 = alloca double
+  %106 = alloca double
+  %107 = alloca i64
+  %108 = alloca i64
+  %109 = alloca <3 x double>
+  %110 = alloca double
+  %111 = alloca i64
+  %ray_d1 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d1, <3 x double>* %0
+  store double 1.000000e-03, double* %1
+  %return = call double @"neg@FF"(double 0x3FBFC6FBC6DB274B)
+  store double %return, double* %2
+  store i64 0, i64* %3
+  store i64 0, i64* %4
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %0, double* %1, double* %2, <3 x double>* %surface_n, <3 x double>* %_T, i64* %3, i64* %4)
+  %surface_n3 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n3, <3 x double>* %5
+  store double 1.672920e+00, double* %6
+  store i64 0, i64* %7
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %5, double* %6, <3 x double>* %_T, i64* %7)
+  %ray_d5 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d5, <3 x double>* %8
+  store double 0x3F6EA35935FC3B50, double* %9
+  %return7 = call double @"neg@FF"(double 0x3FB1758E1445D650)
+  store double %return7, double* %10
+  store i64 0, i64* %11
+  store i64 1, i64* %12
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %8, double* %9, double* %10, <3 x double>* %surface_n, <3 x double>* %_T, i64* %11, i64* %12)
+  %ray_p8 = load <3 x double>, <3 x double>* %ray_p
+  %return9 = call <3 x double> @"set@VFFF"(double 1.000000e+00, double 1.000000e+00, double 0.000000e+00)
+  %output10 = call <3 x double> @"mul@VV"(<3 x double> %ray_p8, <3 x double> %return9)
+  %return11 = call double @"length@FV"(<3 x double> %output10)
+  %return12 = fcmp ogt double %return11, 3.050000e-02
+  br i1 %return12, label %true, label %end
+
+true:                                             ; preds = %__llvm_entry
+  %return14 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return14, <3 x double>* %_T
+  br label %end
+
+end:                                              ; preds = %true, %__llvm_entry
+  %surface_n15 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n15, <3 x double>* %13
+  store double 1.672920e+00, double* %14
+  store i64 1, i64* %15
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %13, double* %14, <3 x double>* %_T, i64* %15)
+  %ray_d16 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d16, <3 x double>* %16
+  store double 0x3F6EA35935FC3B50, double* %17
+  store double %return7, double* %18
+  store i64 0, i64* %19
+  store i64 0, i64* %20
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %16, double* %17, double* %18, <3 x double>* %surface_n, <3 x double>* %_T, i64* %19, i64* %20)
+  %surface_n19 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n19, <3 x double>* %21
+  store double 1.642380e+00, double* %22
+  store i64 0, i64* %23
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %21, double* %22, <3 x double>* %_T, i64* %23)
+  %ray_d22 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d22, <3 x double>* %24
+  store double 0x3F8F751049E5816E, double* %25
+  store double 0x3FBC14A4DD0193CD, double* %26
+  store i64 1, i64* %27
+  store i64 1, i64* %28
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %24, double* %25, double* %26, <3 x double>* %surface_n, <3 x double>* %_T, i64* %27, i64* %28)
+  %ray_p24 = load <3 x double>, <3 x double>* %ray_p
+  %output26 = call <3 x double> @"mul@VV"(<3 x double> %ray_p24, <3 x double> %return9)
+  %return27 = call double @"length@FV"(<3 x double> %output26)
+  %return28 = fcmp ogt double %return27, 3.050000e-02
+  br i1 %return28, label %true30, label %end31
+
+true30:                                           ; preds = %end
+  %return32 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return32, <3 x double>* %_T
+  br label %end31
+
+end31:                                            ; preds = %true30, %end
+  %surface_n33 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n33, <3 x double>* %29
+  store double 1.642380e+00, double* %30
+  store i64 1, i64* %31
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %29, double* %30, <3 x double>* %_T, i64* %31)
+  %ray_d36 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d36, <3 x double>* %32
+  store double 0x3F9BC01A31BB8124, double* %33
+  %return38 = call double @"neg@FF"(double 5.500000e-02)
+  store double %return38, double* %34
+  store i64 0, i64* %35
+  store i64 0, i64* %36
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %32, double* %33, double* %34, <3 x double>* %surface_n, <3 x double>* %_T, i64* %35, i64* %36)
+  %surface_n39 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n39, <3 x double>* %37
+  store double 1.642380e+00, double* %38
+  store i64 0, i64* %39
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %37, double* %38, <3 x double>* %_T, i64* %39)
+  %ray_d42 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d42, <3 x double>* %40
+  store double 0x3FA93DD983AE39A9, double* %41
+  store double 0x3FAAACD9DB5BB96D, double* %42
+  store i64 1, i64* %43
+  store i64 1, i64* %44
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %40, double* %41, double* %42, <3 x double>* %surface_n, <3 x double>* %_T, i64* %43, i64* %44)
+  %ray_p44 = load <3 x double>, <3 x double>* %ray_p
+  %output46 = call <3 x double> @"mul@VV"(<3 x double> %ray_p44, <3 x double> %return9)
+  %return47 = call double @"length@FV"(<3 x double> %output46)
+  %return48 = fcmp ogt double %return47, 3.000000e-02
+  br i1 %return48, label %true50, label %end51
+
+true50:                                           ; preds = %end31
+  %return52 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return52, <3 x double>* %_T
+  br label %end51
+
+end51:                                            ; preds = %true50, %end31
+  %surface_n53 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n53, <3 x double>* %45
+  store double 1.642380e+00, double* %46
+  store i64 1, i64* %47
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %45, double* %46, <3 x double>* %_T, i64* %47)
+  %ray_d54 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d54, <3 x double>* %48
+  store double 0x3FA93DD983AE39A9, double* %49
+  store double 0x3FAAACD9DB5BB96D, double* %50
+  store i64 1, i64* %51
+  store i64 0, i64* %52
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %48, double* %49, double* %50, <3 x double>* %surface_n, <3 x double>* %_T, i64* %51, i64* %52)
+  %ray_p56 = load <3 x double>, <3 x double>* %ray_p
+  %output58 = call <3 x double> @"mul@VV"(<3 x double> %ray_p56, <3 x double> %return9)
+  %return59 = call double @"length@FV"(<3 x double> %output58)
+  %return60 = fcmp ogt double %return59, 3.000000e-02
+  br i1 %return60, label %true62, label %end63
+
+true62:                                           ; preds = %end51
+  %return64 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return64, <3 x double>* %_T
+  br label %end63
+
+end63:                                            ; preds = %true62, %end51
+  %surface_n65 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n65, <3 x double>* %53
+  store double 1.645790e+00, double* %54
+  store i64 0, i64* %55
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %53, double* %54, <3 x double>* %_T, i64* %55)
+  %ray_d68 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d68, <3 x double>* %56
+  store double 0x3FABEB5B3198C31F, double* %57
+  %return70 = call double @"neg@FF"(double 0x3FA461F9FC22285D)
+  store double %return70, double* %58
+  store i64 0, i64* %59
+  store i64 1, i64* %60
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %56, double* %57, double* %58, <3 x double>* %surface_n, <3 x double>* %_T, i64* %59, i64* %60)
+  %ray_p71 = load <3 x double>, <3 x double>* %ray_p
+  %output73 = call <3 x double> @"mul@VV"(<3 x double> %ray_p71, <3 x double> %return9)
+  %return74 = call double @"length@FV"(<3 x double> %output73)
+  %return75 = fcmp ogt double %return74, 0x3F9702602089DFD4
+  br i1 %return75, label %true77, label %end78
+
+true77:                                           ; preds = %end63
+  %return79 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return79, <3 x double>* %_T
+  br label %end78
+
+end78:                                            ; preds = %true77, %end63
+  %surface_n80 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n80, <3 x double>* %61
+  store double 1.645790e+00, double* %62
+  store i64 1, i64* %63
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %61, double* %62, <3 x double>* %_T, i64* %63)
+  %ray_d83 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d83, <3 x double>* %64
+  store double 0x3FB2F8DF7C0648B5, double* %65
+  store double 0x3F9DE3FBC6122626, double* %66
+  store i64 1, i64* %67
+  store i64 0, i64* %68
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %64, double* %65, double* %66, <3 x double>* %surface_n, <3 x double>* %_T, i64* %67, i64* %68)
+  %ray_p85 = load <3 x double>, <3 x double>* %ray_p
+  %output87 = call <3 x double> @"mul@VV"(<3 x double> %ray_p85, <3 x double> %return9)
+  %return88 = call double @"length@FV"(<3 x double> %output87)
+  %return89 = fcmp ogt double %return88, 0x3F9702602089DFD4
+  br i1 %return89, label %true91, label %end92
+
+true91:                                           ; preds = %end78
+  %return93 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return93, <3 x double>* %_T
+  br label %end92
+
+end92:                                            ; preds = %true91, %end78
+  %surface_n94 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n94, <3 x double>* %69
+  store double 1.569260e+00, double* %70
+  store i64 0, i64* %71
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %69, double* %70, <3 x double>* %_T, i64* %71)
+  %ray_p95 = load <3 x double>, <3 x double>* %ray_p
+  %output97 = call <3 x double> @"mul@VV"(<3 x double> %ray_p95, <3 x double> %return9)
+  %return98 = call double @"length@FV"(<3 x double> %output97)
+  %return99 = fcmp ogt double %return98, 2.200000e-02
+  br i1 %return99, label %true101, label %end102
+
+true101:                                          ; preds = %end92
+  %return103 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return103, <3 x double>* %_T
+  br label %end102
+
+end102:                                           ; preds = %true101, %end92
+  %ray_d106 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d106, <3 x double>* %72
+  store double 0x3FB38A5CE76BF25D, double* %73
+  %return108 = call double @"neg@FF"(double 0x3FF1E685E3542EC9)
+  store double %return108, double* %74
+  store i64 0, i64* %75
+  store i64 1, i64* %76
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %72, double* %73, double* %74, <3 x double>* %surface_n, <3 x double>* %_T, i64* %75, i64* %76)
+  %ray_p109 = load <3 x double>, <3 x double>* %ray_p
+  %output111 = call <3 x double> @"mul@VV"(<3 x double> %ray_p109, <3 x double> %return9)
+  %return112 = call double @"length@FV"(<3 x double> %output111)
+  %return113 = fcmp ogt double %return112, 3.000000e-02
+  br i1 %return113, label %true115, label %end116
+
+true115:                                          ; preds = %end102
+  %return117 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return117, <3 x double>* %_T
+  br label %end116
+
+end116:                                           ; preds = %true115, %end102
+  %surface_n118 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n118, <3 x double>* %77
+  store double 1.569260e+00, double* %78
+  store i64 1, i64* %79
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %77, double* %78, <3 x double>* %_T, i64* %79)
+  %ray_d119 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d119, <3 x double>* %80
+  store double 0x3FB38A5CE76BF25D, double* %81
+  store double %return108, double* %82
+  store i64 0, i64* %83
+  store i64 0, i64* %84
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %80, double* %81, double* %82, <3 x double>* %surface_n, <3 x double>* %_T, i64* %83, i64* %84)
+  %surface_n122 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n122, <3 x double>* %85
+  store double 1.623770e+00, double* %86
+  store i64 0, i64* %87
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %85, double* %86, <3 x double>* %_T, i64* %87)
+  %ray_d125 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d125, <3 x double>* %88
+  store double 0x3FB7A786C294741D, double* %89
+  store double 0x3FA7BB2FDF744CE1, double* %90
+  store i64 1, i64* %91
+  store i64 1, i64* %92
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %88, double* %89, double* %90, <3 x double>* %surface_n, <3 x double>* %_T, i64* %91, i64* %92)
+  %ray_p127 = load <3 x double>, <3 x double>* %ray_p
+  %output129 = call <3 x double> @"mul@VV"(<3 x double> %ray_p127, <3 x double> %return9)
+  %return130 = call double @"length@FV"(<3 x double> %output129)
+  %return131 = fcmp ogt double %return130, 3.000000e-02
+  br i1 %return131, label %true133, label %end134
+
+true133:                                          ; preds = %end116
+  %return135 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return135, <3 x double>* %_T
+  br label %end134
+
+end134:                                           ; preds = %true133, %end116
+  %surface_n136 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n136, <3 x double>* %93
+  store double 1.623770e+00, double* %94
+  store i64 1, i64* %95
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %93, double* %94, <3 x double>* %_T, i64* %95)
+  %ray_d139 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d139, <3 x double>* %96
+  store double 0x3FB816F006FBAC3A, double* %97
+  store double 0x3FD52FC26E8B3437, double* %98
+  store i64 1, i64* %99
+  store i64 0, i64* %100
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %96, double* %97, double* %98, <3 x double>* %surface_n, <3 x double>* %_T, i64* %99, i64* %100)
+  %surface_n141 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n141, <3 x double>* %101
+  store double 1.642380e+00, double* %102
+  store i64 0, i64* %103
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %101, double* %102, <3 x double>* %_T, i64* %103)
+  %ray_d144 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d144, <3 x double>* %104
+  store double 0x3FBAEE6321AFCA80, double* %105
+  store double 0x3FB6108C498CD762, double* %106
+  store i64 1, i64* %107
+  store i64 1, i64* %108
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %104, double* %105, double* %106, <3 x double>* %surface_n, <3 x double>* %_T, i64* %107, i64* %108)
+  %ray_p146 = load <3 x double>, <3 x double>* %ray_p
+  %output148 = call <3 x double> @"mul@VV"(<3 x double> %ray_p146, <3 x double> %return9)
+  %return149 = call double @"length@FV"(<3 x double> %output148)
+  %return150 = fcmp ogt double %return149, 0x3FA2DE00C4669AEC
+  br i1 %return150, label %true152, label %end153
+
+true152:                                          ; preds = %end134
+  %return154 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return154, <3 x double>* %_T
+  br label %end153
+
+end153:                                           ; preds = %true152, %end134
+  %surface_n155 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n155, <3 x double>* %109
+  store double 1.642380e+00, double* %110
+  store i64 1, i64* %111
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %109, double* %110, <3 x double>* %_T, i64* %111)
+  ret void
+}
+
+; Function Attrs: alwaysinline nounwind
+define private void @"_lens_trace_3@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n) #0 {
+__llvm_entry:
+  %0 = alloca <3 x double>
+  %1 = alloca double
+  %2 = alloca double
+  %3 = alloca i64
+  %4 = alloca i64
+  %5 = alloca <3 x double>
+  %6 = alloca double
+  %7 = alloca i64
+  %8 = alloca <3 x double>
+  %9 = alloca double
+  %10 = alloca double
+  %11 = alloca i64
+  %12 = alloca i64
+  %13 = alloca <3 x double>
+  %14 = alloca double
+  %15 = alloca i64
+  %16 = alloca <3 x double>
+  %17 = alloca double
+  %18 = alloca double
+  %19 = alloca i64
+  %20 = alloca i64
+  %21 = alloca <3 x double>
+  %22 = alloca double
+  %23 = alloca i64
+  %24 = alloca <3 x double>
+  %25 = alloca double
+  %26 = alloca double
+  %27 = alloca i64
+  %28 = alloca i64
+  %29 = alloca <3 x double>
+  %30 = alloca double
+  %31 = alloca i64
+  %32 = alloca <3 x double>
+  %33 = alloca double
+  %34 = alloca double
+  %35 = alloca i64
+  %36 = alloca i64
+  %37 = alloca <3 x double>
+  %38 = alloca double
+  %39 = alloca i64
+  %40 = alloca <3 x double>
+  %41 = alloca double
+  %42 = alloca double
+  %43 = alloca i64
+  %44 = alloca i64
+  %45 = alloca <3 x double>
+  %46 = alloca double
+  %47 = alloca i64
+  %ray_d1 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d1, <3 x double>* %0
+  store double 1.000000e-03, double* %1
+  %return = call double @"neg@FF"(double 0x3FAAD57BC63FACF9)
+  store double %return, double* %2
+  store i64 0, i64* %3
+  store i64 0, i64* %4
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %0, double* %1, double* %2, <3 x double>* %surface_n, <3 x double>* %_T, i64* %3, i64* %4)
+  %surface_n3 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n3, <3 x double>* %5
+  store double 1.697000e+00, double* %6
+  store i64 0, i64* %7
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %5, double* %6, <3 x double>* %_T, i64* %7)
+  %ray_d5 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d5, <3 x double>* %8
+  store double 0x3F956C0D710C19AF, double* %9
+  store double 0x3FBE978D4FDF3B65, double* %10
+  store i64 1, i64* %11
+  store i64 1, i64* %12
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %8, double* %9, double* %10, <3 x double>* %surface_n, <3 x double>* %_T, i64* %11, i64* %12)
+  %ray_p7 = load <3 x double>, <3 x double>* %ray_p
+  %return8 = call <3 x double> @"set@VFFF"(double 1.000000e+00, double 1.000000e+00, double 0.000000e+00)
+  %output9 = call <3 x double> @"mul@VV"(<3 x double> %ray_p7, <3 x double> %return8)
+  %return10 = call double @"length@FV"(<3 x double> %output9)
+  %return11 = fcmp ogt double %return10, 0x3F9A5119BA459E8B
+  br i1 %return11, label %true, label %end
+
+true:                                             ; preds = %__llvm_entry
+  %return13 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return13, <3 x double>* %_T
+  br label %end
+
+end:                                              ; preds = %true, %__llvm_entry
+  %surface_n14 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n14, <3 x double>* %13
+  store double 1.697000e+00, double* %14
+  store i64 1, i64* %15
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %13, double* %14, <3 x double>* %_T, i64* %15)
+  %ray_d17 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d17, <3 x double>* %16
+  store double 0x3FA1F36267172A2C, double* %17
+  store double 0x3FA449128F160B6F, double* %18
+  store i64 1, i64* %19
+  store i64 0, i64* %20
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %16, double* %17, double* %18, <3 x double>* %surface_n, <3 x double>* %_T, i64* %19, i64* %20)
+  %ray_p19 = load <3 x double>, <3 x double>* %ray_p
+  %output21 = call <3 x double> @"mul@VV"(<3 x double> %ray_p19, <3 x double> %return8)
+  %return22 = call double @"length@FV"(<3 x double> %output21)
+  %return23 = fcmp ogt double %return22, 0x3F97525459CB2CCD
+  br i1 %return23, label %true25, label %end26
+
+true25:                                           ; preds = %end
+  %return27 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return27, <3 x double>* %_T
+  br label %end26
+
+end26:                                            ; preds = %true25, %end
+  %surface_n28 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n28, <3 x double>* %21
+  store double 1.647000e+00, double* %22
+  store i64 0, i64* %23
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %21, double* %22, <3 x double>* %_T, i64* %23)
+  %ray_p29 = load <3 x double>, <3 x double>* %ray_p
+  %output31 = call <3 x double> @"mul@VV"(<3 x double> %ray_p29, <3 x double> %return8)
+  %return32 = call double @"length@FV"(<3 x double> %output31)
+  %return33 = fcmp ogt double %return32, 0x3F90CB2957BEE313
+  br i1 %return33, label %true35, label %end36
+
+true35:                                           ; preds = %end26
+  %return37 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return37, <3 x double>* %_T
+  br label %end36
+
+end36:                                            ; preds = %true35, %end26
+  %ray_d40 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d40, <3 x double>* %24
+  store double 0x3FA44284E5D18248, double* %25
+  %return42 = call double @"neg@FF"(double 0x3FB1042D9151AF47)
+  store double %return42, double* %26
+  store i64 0, i64* %27
+  store i64 1, i64* %28
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %24, double* %25, double* %26, <3 x double>* %surface_n, <3 x double>* %_T, i64* %27, i64* %28)
+  %ray_p43 = load <3 x double>, <3 x double>* %ray_p
+  %output45 = call <3 x double> @"mul@VV"(<3 x double> %ray_p43, <3 x double> %return8)
+  %return46 = call double @"length@FV"(<3 x double> %output45)
+  %return47 = fcmp ogt double %return46, 0x3F9A68B18913535E
+  br i1 %return47, label %true49, label %end50
+
+true49:                                           ; preds = %end36
+  %return51 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return51, <3 x double>* %_T
+  br label %end50
+
+end50:                                            ; preds = %true49, %end36
+  %surface_n52 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n52, <3 x double>* %29
+  store double 1.647000e+00, double* %30
+  store i64 1, i64* %31
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %29, double* %30, <3 x double>* %_T, i64* %31)
+  %ray_d55 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d55, <3 x double>* %32
+  store double 0x3FA84CAD5CE3E970, double* %33
+  %return57 = call double @"neg@FF"(double 0x3FD64DD2F1A9FBE8)
+  store double %return57, double* %34
+  store i64 0, i64* %35
+  store i64 0, i64* %36
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %32, double* %33, double* %34, <3 x double>* %surface_n, <3 x double>* %_T, i64* %35, i64* %36)
+  %surface_n58 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n58, <3 x double>* %37
+  store double 1.745000e+00, double* %38
+  store i64 0, i64* %39
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %37, double* %38, <3 x double>* %_T, i64* %39)
+  %ray_d61 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d61, <3 x double>* %40
+  store double 0x3FB2B17050622799, double* %41
+  store double 0x3FB008850E7912DC, double* %42
+  store i64 1, i64* %43
+  store i64 1, i64* %44
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %40, double* %41, double* %42, <3 x double>* %surface_n, <3 x double>* %_T, i64* %43, i64* %44)
+  %ray_p63 = load <3 x double>, <3 x double>* %ray_p
+  %output65 = call <3 x double> @"mul@VV"(<3 x double> %ray_p63, <3 x double> %return8)
+  %return66 = call double @"length@FV"(<3 x double> %output65)
+  %return67 = fcmp ogt double %return66, 0x3F9F77AF3BA6D10F
+  br i1 %return67, label %true69, label %end70
+
+true69:                                           ; preds = %end50
+  %return71 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return71, <3 x double>* %_T
+  br label %end70
+
+end70:                                            ; preds = %true69, %end50
+  %surface_n72 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n72, <3 x double>* %45
+  store double 1.745000e+00, double* %46
+  store i64 1, i64* %47
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %45, double* %46, <3 x double>* %_T, i64* %47)
+  ret void
+}
+
+; Function Attrs: alwaysinline nounwind
+define private void @"_lens_trace_4@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n) #0 {
+__llvm_entry:
+  %0 = alloca <3 x double>
+  %1 = alloca double
+  %2 = alloca double
+  %3 = alloca i64
+  %4 = alloca i64
+  %5 = alloca <3 x double>
+  %6 = alloca double
+  %7 = alloca i64
+  %8 = alloca <3 x double>
+  %9 = alloca double
+  %10 = alloca double
+  %11 = alloca i64
+  %12 = alloca i64
+  %13 = alloca <3 x double>
+  %14 = alloca double
+  %15 = alloca i64
+  %16 = alloca <3 x double>
+  %17 = alloca double
+  %18 = alloca double
+  %19 = alloca i64
+  %20 = alloca i64
+  %21 = alloca <3 x double>
+  %22 = alloca double
+  %23 = alloca i64
+  %24 = alloca <3 x double>
+  %25 = alloca double
+  %26 = alloca double
+  %27 = alloca i64
+  %28 = alloca i64
+  %29 = alloca <3 x double>
+  %30 = alloca double
+  %31 = alloca i64
+  %32 = alloca <3 x double>
+  %33 = alloca double
+  %34 = alloca double
+  %35 = alloca i64
+  %36 = alloca i64
+  %37 = alloca <3 x double>
+  %38 = alloca double
+  %39 = alloca i64
+  %40 = alloca <3 x double>
+  %41 = alloca double
+  %42 = alloca double
+  %43 = alloca i64
+  %44 = alloca i64
+  %45 = alloca <3 x double>
+  %46 = alloca double
+  %47 = alloca i64
+  %48 = alloca <3 x double>
+  %49 = alloca double
+  %50 = alloca double
+  %51 = alloca i64
+  %52 = alloca i64
+  %53 = alloca <3 x double>
+  %54 = alloca double
+  %55 = alloca i64
+  %56 = alloca <3 x double>
+  %57 = alloca double
+  %58 = alloca double
+  %59 = alloca i64
+  %60 = alloca i64
+  %61 = alloca <3 x double>
+  %62 = alloca double
+  %63 = alloca i64
+  %64 = alloca <3 x double>
+  %65 = alloca double
+  %66 = alloca double
+  %67 = alloca i64
+  %68 = alloca i64
+  %69 = alloca <3 x double>
+  %70 = alloca double
+  %71 = alloca i64
+  %72 = alloca <3 x double>
+  %73 = alloca double
+  %74 = alloca double
+  %75 = alloca i64
+  %76 = alloca i64
+  %77 = alloca <3 x double>
+  %78 = alloca double
+  %79 = alloca i64
+  %ray_d1 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d1, <3 x double>* %0
+  store double 1.000000e-03, double* %1
+  %return = call double @"neg@FF"(double 5.280000e-05)
+  store double %return, double* %2
+  store i64 0, i64* %3
+  store i64 0, i64* %4
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %0, double* %1, double* %2, <3 x double>* %surface_n, <3 x double>* %_T, i64* %3, i64* %4)
+  %ray_p3 = load <3 x double>, <3 x double>* %ray_p
+  %return4 = call <3 x double> @"set@VFFF"(double 1.000000e+00, double 1.000000e+00, double 0.000000e+00)
+  %output = call <3 x double> @"mul@VV"(<3 x double> %ray_p3, <3 x double> %return4)
+  %return5 = call double @"length@FV"(<3 x double> %output)
+  %return6 = fcmp ogt double %return5, 2.200000e-05
+  br i1 %return6, label %true, label %end
+
+true:                                             ; preds = %__llvm_entry
+  %return8 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return8, <3 x double>* %_T
+  br label %end
+
+end:                                              ; preds = %true, %__llvm_entry
+  %surface_n9 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n9, <3 x double>* %5
+  store double 0x3FF9EF9DCD0500F1, double* %6
+  store i64 0, i64* %7
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %5, double* %6, <3 x double>* %_T, i64* %7)
+  %ray_d12 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d12, <3 x double>* %8
+  store double 1.023600e-03, double* %9
+  store double 0x3F15B49D2B1E91BC, double* %10
+  store i64 1, i64* %11
+  store i64 1, i64* %12
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %8, double* %9, double* %10, <3 x double>* %surface_n, <3 x double>* %_T, i64* %11, i64* %12)
+  %ray_p14 = load <3 x double>, <3 x double>* %ray_p
+  %output16 = call <3 x double> @"mul@VV"(<3 x double> %ray_p14, <3 x double> %return4)
+  %return17 = call double @"length@FV"(<3 x double> %output16)
+  %return18 = fcmp ogt double %return17, 2.200000e-05
+  br i1 %return18, label %true20, label %end21
+
+true20:                                           ; preds = %end
+  %return22 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return22, <3 x double>* %_T
+  br label %end21
+
+end21:                                            ; preds = %true20, %end
+  %surface_n23 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n23, <3 x double>* %13
+  store double 0x3FF9EF9DCD0500F1, double* %14
+  store i64 1, i64* %15
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %13, double* %14, <3 x double>* %_T, i64* %15)
+  %ray_d26 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d26, <3 x double>* %16
+  store double 1.034800e-03, double* %17
+  store double 3.290000e-05, double* %18
+  store i64 1, i64* %19
+  store i64 0, i64* %20
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %16, double* %17, double* %18, <3 x double>* %surface_n, <3 x double>* %_T, i64* %19, i64* %20)
+  %ray_p28 = load <3 x double>, <3 x double>* %ray_p
+  %output30 = call <3 x double> @"mul@VV"(<3 x double> %ray_p28, <3 x double> %return4)
+  %return31 = call double @"length@FV"(<3 x double> %output30)
+  %return32 = fcmp ogt double %return31, 2.500000e-05
+  br i1 %return32, label %true34, label %end35
+
+true34:                                           ; preds = %end21
+  %return36 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return36, <3 x double>* %_T
+  br label %end35
+
+end35:                                            ; preds = %true34, %end21
+  %surface_n37 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n37, <3 x double>* %21
+  store double 1.687000e+00, double* %22
+  store i64 0, i64* %23
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %21, double* %22, <3 x double>* %_T, i64* %23)
+  %ray_d40 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d40, <3 x double>* %24
+  store double 1.038400e-03, double* %25
+  %return42 = call double @"neg@FF"(double 1.093000e-04)
+  store double %return42, double* %26
+  store i64 0, i64* %27
+  store i64 1, i64* %28
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %24, double* %25, double* %26, <3 x double>* %surface_n, <3 x double>* %_T, i64* %27, i64* %28)
+  %ray_p43 = load <3 x double>, <3 x double>* %ray_p
+  %output45 = call <3 x double> @"mul@VV"(<3 x double> %ray_p43, <3 x double> %return4)
+  %return46 = call double @"length@FV"(<3 x double> %output45)
+  %return47 = fcmp ogt double %return46, 2.500000e-05
+  br i1 %return47, label %true49, label %end50
+
+true49:                                           ; preds = %end35
+  %return51 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return51, <3 x double>* %_T
+  br label %end50
+
+end50:                                            ; preds = %true49, %end35
+  %surface_n52 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n52, <3 x double>* %29
+  store double 1.687000e+00, double* %30
+  store i64 1, i64* %31
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %29, double* %30, <3 x double>* %_T, i64* %31)
+  %ray_d55 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d55, <3 x double>* %32
+  store double 1.048600e-03, double* %33
+  store double 5.400000e-05, double* %34
+  store i64 1, i64* %35
+  store i64 0, i64* %36
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %32, double* %33, double* %34, <3 x double>* %surface_n, <3 x double>* %_T, i64* %35, i64* %36)
+  %ray_p57 = load <3 x double>, <3 x double>* %ray_p
+  %output59 = call <3 x double> @"mul@VV"(<3 x double> %ray_p57, <3 x double> %return4)
+  %return60 = call double @"length@FV"(<3 x double> %output59)
+  %return61 = fcmp ogt double %return60, 2.500000e-05
+  br i1 %return61, label %true63, label %end64
+
+true63:                                           ; preds = %end50
+  %return65 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return65, <3 x double>* %_T
+  br label %end64
+
+end64:                                            ; preds = %true63, %end50
+  %surface_n66 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n66, <3 x double>* %37
+  store double 1.625000e+00, double* %38
+  store i64 0, i64* %39
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %37, double* %38, <3 x double>* %_T, i64* %39)
+  %ray_p67 = load <3 x double>, <3 x double>* %ray_p
+  %output69 = call <3 x double> @"mul@VV"(<3 x double> %ray_p67, <3 x double> %return4)
+  %return70 = call double @"length@FV"(<3 x double> %output69)
+  %return71 = fcmp ogt double %return70, 1.800000e-05
+  br i1 %return71, label %true73, label %end74
+
+true73:                                           ; preds = %end64
+  %return75 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return75, <3 x double>* %_T
+  br label %end74
+
+end74:                                            ; preds = %true73, %end64
+  %ray_d78 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d78, <3 x double>* %40
+  store double 0x3F515BDD76683C2A, double* %41
+  store double 2.690000e-05, double* %42
+  store i64 1, i64* %43
+  store i64 1, i64* %44
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %40, double* %41, double* %42, <3 x double>* %surface_n, <3 x double>* %_T, i64* %43, i64* %44)
+  %ray_p80 = load <3 x double>, <3 x double>* %ray_p
+  %output82 = call <3 x double> @"mul@VV"(<3 x double> %ray_p80, <3 x double> %return4)
+  %return83 = call double @"length@FV"(<3 x double> %output82)
+  %return84 = fcmp ogt double %return83, 2.500000e-05
+  br i1 %return84, label %true86, label %end87
+
+true86:                                           ; preds = %end74
+  %return88 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return88, <3 x double>* %_T
+  br label %end87
+
+end87:                                            ; preds = %true86, %end74
+  %surface_n89 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n89, <3 x double>* %45
+  store double 1.625000e+00, double* %46
+  store i64 1, i64* %47
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %45, double* %46, <3 x double>* %_T, i64* %47)
+  %ray_d90 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d90, <3 x double>* %48
+  store double 0x3F515BDD76683C2A, double* %49
+  store double 2.690000e-05, double* %50
+  store i64 1, i64* %51
+  store i64 0, i64* %52
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %48, double* %49, double* %50, <3 x double>* %surface_n, <3 x double>* %_T, i64* %51, i64* %52)
+  %ray_p92 = load <3 x double>, <3 x double>* %ray_p
+  %output94 = call <3 x double> @"mul@VV"(<3 x double> %ray_p92, <3 x double> %return4)
+  %return95 = call double @"length@FV"(<3 x double> %output94)
+  %return96 = fcmp ogt double %return95, 2.500000e-05
+  br i1 %return96, label %true98, label %end99
+
+true98:                                           ; preds = %end87
+  %return100 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return100, <3 x double>* %_T
+  br label %end99
+
+end99:                                            ; preds = %true98, %end87
+  %surface_n101 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n101, <3 x double>* %53
+  store double 1.648000e+00, double* %54
+  store i64 0, i64* %55
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %53, double* %54, <3 x double>* %_T, i64* %55)
+  %ray_d104 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d104, <3 x double>* %56
+  store double 0x3F516AF6EEDF464D, double* %57
+  store double 4.330000e-05, double* %58
+  store i64 1, i64* %59
+  store i64 1, i64* %60
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %56, double* %57, double* %58, <3 x double>* %surface_n, <3 x double>* %_T, i64* %59, i64* %60)
+  %ray_p106 = load <3 x double>, <3 x double>* %ray_p
+  %output108 = call <3 x double> @"mul@VV"(<3 x double> %ray_p106, <3 x double> %return4)
+  %return109 = call double @"length@FV"(<3 x double> %output108)
+  %return110 = fcmp ogt double %return109, 2.500000e-05
+  br i1 %return110, label %true112, label %end113
+
+true112:                                          ; preds = %end99
+  %return114 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return114, <3 x double>* %_T
+  br label %end113
+
+end113:                                           ; preds = %true112, %end99
+  %surface_n115 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n115, <3 x double>* %61
+  store double 1.648000e+00, double* %62
+  store i64 1, i64* %63
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %61, double* %62, <3 x double>* %_T, i64* %63)
+  %ray_d118 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d118, <3 x double>* %64
+  store double 0x3F518853203884AD, double* %65
+  store double 1.430100e-03, double* %66
+  store i64 1, i64* %67
+  store i64 0, i64* %68
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %64, double* %65, double* %66, <3 x double>* %surface_n, <3 x double>* %_T, i64* %67, i64* %68)
+  %ray_p120 = load <3 x double>, <3 x double>* %ray_p
+  %output122 = call <3 x double> @"mul@VV"(<3 x double> %ray_p120, <3 x double> %return4)
+  %return123 = call double @"length@FV"(<3 x double> %output122)
+  %return124 = fcmp ogt double %return123, 0x3F02C4FEA231EE8F
+  br i1 %return124, label %true126, label %end127
+
+true126:                                          ; preds = %end113
+  %return128 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return128, <3 x double>* %_T
+  br label %end127
+
+end127:                                           ; preds = %true126, %end113
+  %surface_n129 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n129, <3 x double>* %69
+  store double 0x3FFA831253BF9AB5, double* %70
+  store i64 0, i64* %71
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %69, double* %70, <3 x double>* %_T, i64* %71)
+  %ray_d132 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d132, <3 x double>* %72
+  store double 0x3F51B60AE9680E08, double* %73
+  store double 7.020000e-05, double* %74
+  store i64 1, i64* %75
+  store i64 1, i64* %76
+  call void @"ls_lineSphereIntersect@VVFFVVII"(<3 x double>* %ray_p, <3 x double>* %72, double* %73, double* %74, <3 x double>* %surface_n, <3 x double>* %_T, i64* %75, i64* %76)
+  %ray_p134 = load <3 x double>, <3 x double>* %ray_p
+  %output136 = call <3 x double> @"mul@VV"(<3 x double> %ray_p134, <3 x double> %return4)
+  %return137 = call double @"length@FV"(<3 x double> %output136)
+  %return138 = fcmp ogt double %return137, 0x3F02C4FEA231EE8F
+  br i1 %return138, label %true140, label %end141
+
+true140:                                          ; preds = %end127
+  %return142 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  store <3 x double> %return142, <3 x double>* %_T
+  br label %end141
+
+end141:                                           ; preds = %true140, %end127
+  %surface_n143 = load <3 x double>, <3 x double>* %surface_n
+  store <3 x double> %surface_n143, <3 x double>* %77
+  store double 0x3FFA831253BF9AB5, double* %78
+  store i64 1, i64* %79
+  call void @"ls_refract@VVFVI"(<3 x double>* %ray_d, <3 x double>* %77, double* %78, <3 x double>* %_T, i64* %79)
+  ret void
+}
+
+; Function Attrs: nounwind
+define void @lentilkarma(double %x, double %y, double %Time, double %dofx, double %dofy, double %aspect, <3 x double> %P, <3 x double> %I, <3 x double> %tint, i64 %lens_select, double %lens_fstop, double %lens_focus_dist, double %chromatic_aberration, double %exposure, i64 %aperture_ray_guiding, i64 %aperture_auto_exposure, double %tilt_shift_angle_x, double %tilt_shift_angle_y, double %tilt_shift_offset_x, double %tilt_shift_offset_y, double %dof_factor, double %dof_remove, i64 %flip, double %global_scale, double %distortion_amount, double %distortion_exponent, double %bokeh_swirliness, double %sensor_scale, i64 %debug_trace) #2 {
+__llvm_entry:
+  %0 = alloca double
+  %1 = alloca double
+  %2 = alloca double
+  %3 = alloca double
+  %4 = alloca double
+  %ray_p = alloca <3 x double>
+  %ray_d = alloca <3 x double>
+  %_T = alloca <3 x double>
+  %surface_n = alloca <3 x double>
+  %5 = alloca double
+  %6 = alloca double
+  %7 = alloca double
+  %8 = alloca double
+  %9 = alloca double
+  %10 = alloca double
+  %11 = alloca double
+  %12 = alloca <3 x double>
+  %13 = alloca <3 x double>
+  %14 = alloca <3 x double>
+  %15 = alloca <3 x double>
+  %16 = alloca <3 x double>
+  %17 = alloca <3 x double>
+  %18 = alloca <3 x double>
+  %19 = alloca <3 x double>
+  %20 = alloca <3 x double>
+  %21 = alloca <3 x double>
+  %22 = alloca <3 x double>
+  %23 = alloca <3 x double>
+  %return = call double @"neg@FF"(double 1.000000e-03)
+  %return3 = fcmp ogt double %x, %return
+  %return4 = zext i1 %return3 to i64
+  %return5 = call i64 @"and@III"(i64 %debug_trace, i64 %return4)
+  %return7 = fcmp olt double %x, 1.000000e-03
+  %return8 = zext i1 %return7 to i64
+  %return9 = call i64 @"and@III"(i64 %return5, i64 %return8)
+  %return12 = fcmp ogt double %y, %return
+  %return13 = zext i1 %return12 to i64
+  %return14 = call i64 @"and@III"(i64 %return9, i64 %return13)
+  %return16 = fcmp olt double %y, 1.000000e-03
+  %return17 = zext i1 %return16 to i64
+  %return18 = call i64 @"and@III"(i64 %return14, i64 %return17)
+  %return20 = fcmp olt double %dofx, 1.000000e-02
+  %return21 = zext i1 %return20 to i64
+  %return22 = call i64 @"and@III"(i64 %return18, i64 %return21)
+  %return24 = fcmp olt double %dofy, 1.000000e-02
+  %return25 = zext i1 %return24 to i64
+  %return26 = call i64 @"and@III"(i64 %return22, i64 %return25)
+  %24 = icmp ne i64 %return26, 0
+  br i1 %24, label %true28, label %end29
+
+true28:                                           ; preds = %__llvm_entry
+  call void @"printf@S:I"(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @10, i64 0, i64 0), i64 %lens_select)
+  br label %end29
+
+end29:                                            ; preds = %true28, %__llvm_entry
+  %output = fadd double %x, 1.000000e+00
+  %output32 = call double @"div@FF"(double %output, double 2.000000e+00)
+  %output34 = fadd double %y, 1.000000e+00
+  %output35 = call double @"div@FF"(double %output34, double 2.000000e+00)
+  %return38 = fcmp ole double %lens_focus_dist, 0.000000e+00
+  %.lens_focus_dist36 = select i1 %return38, double 1.000000e+00, double %lens_focus_dist
+  %output44 = call double @"div@FF"(double 1.000000e+00, double %global_scale)
+  %output45 = fmul double %.lens_focus_dist36, %output44
+  %return47 = call i64 @"eq@III"(i64 %lens_select, i64 0)
+  %25 = icmp ne i64 %return47, 0
+  br i1 %25, label %true48, label %false49
+
+true48:                                           ; preds = %end29
+  store double %output45, double* %0
+  %_lens_lut_0 = call double @"_lens_lut_0@FF"(double* %0)
+  br label %end50
+
+false49:                                          ; preds = %end29
+  %return53 = call i64 @"eq@III"(i64 %lens_select, i64 1)
+  %26 = icmp ne i64 %return53, 0
+  br i1 %26, label %true54, label %false55
+
+end50:                                            ; preds = %false67, %true72, %true66, %true60, %true54, %true48
+  %_sensor_position.0 = phi double [ %_lens_lut_0, %true48 ], [ %_lens_lut_1, %true54 ], [ %_lens_lut_2, %true60 ], [ %_lens_lut_3, %true66 ], [ %_lens_lut_4, %true72 ], [ 0.000000e+00, %false67 ]
+  %_edge_angle_500m.0 = phi double [ 0.000000e+00, %true48 ], [ 2.700000e+01, %true54 ], [ 4.300000e+01, %true60 ], [ 7.100000e+01, %true66 ], [ 7.900000e+01, %true72 ], [ 0.000000e+00, %false67 ]
+  %_edge_angle.0 = phi double [ 0.000000e+00, %true48 ], [ 2.100000e+01, %true54 ], [ 4.200000e+01, %true60 ], [ 6.800000e+01, %true66 ], [ 7.400000e+01, %true72 ], [ 0.000000e+00, %false67 ]
+  %_edge_angle_near.0 = phi double [ 0.000000e+00, %true48 ], [ 0.000000e+00, %true54 ], [ 4.000000e+01, %true60 ], [ 0.000000e+00, %true66 ], [ 0.000000e+00, %true72 ], [ 0.000000e+00, %false67 ]
+  %_sensor_pos_far.0 = phi double [ 0x3F9457A0E56327B5, %true48 ], [ 0x3FD40ED93746F1B4, %true54 ], [ 0x3FB17665F1E625A8, %true60 ], [ 0x3FB38D86664E2229, %true66 ], [ 0x3FACDE51063C6103, %true72 ], [ 0.000000e+00, %false67 ]
+  %_sensor_pos_start.0 = phi double [ 0x3F947BF5C305E6AE, %true48 ], [ 0x3FDC025978D51971, %true54 ], [ 0x3FB439717017B09A, %true60 ], [ 0x3FB665D9FC19C851, %true66 ], [ 0x3FB247B9FBC26142, %true72 ], [ 0.000000e+00, %false67 ]
+  %_sensor_pos_near.0 = phi double [ 0.000000e+00, %true48 ], [ 0.000000e+00, %true54 ], [ 0x3FB81C2E3539CC14, %true60 ], [ 0.000000e+00, %true66 ], [ 0.000000e+00, %true72 ], [ 0.000000e+00, %false67 ]
+  %_aperture_r.0 = phi double [ 0x3F7FA76541F5AF1F, %true48 ], [ 0x3F8ECE13F81926A4, %true54 ], [ 2.200000e-02, %true60 ], [ 0x3F90CB2957BEE313, %true66 ], [ 1.800000e-05, %true72 ], [ 0.000000e+00, %false67 ]
+  %_sensor_size_native.0 = phi double [ 0x3F882A9930BE0DEE, %true48 ], [ 9.000000e-02, %true54 ], [ 6.749000e-02, %true60 ], [ 6.740000e-02, %true66 ], [ 6.599990e-02, %true72 ], [ 0.000000e+00, %false67 ]
+  %_f_number.0 = phi double [ 2.800000e+00, %true48 ], [ 1.100000e+01, %true54 ], [ 1.400000e+00, %true60 ], [ 1.900000e+00, %true66 ], [ 2.000000e+00, %true72 ], [ 0.000000e+00, %false67 ]
+  br i1 %24, label %true76, label %end77
+
+true54:                                           ; preds = %false49
+  store double %output45, double* %1
+  %_lens_lut_1 = call double @"_lens_lut_1@FF"(double* %1)
+  br label %end50
+
+false55:                                          ; preds = %false49
+  %return59 = call i64 @"eq@III"(i64 %lens_select, i64 2)
+  %27 = icmp ne i64 %return59, 0
+  br i1 %27, label %true60, label %false61
+
+true60:                                           ; preds = %false55
+  store double %output45, double* %2
+  %_lens_lut_2 = call double @"_lens_lut_2@FF"(double* %2)
+  br label %end50
+
+false61:                                          ; preds = %false55
+  %return65 = call i64 @"eq@III"(i64 %lens_select, i64 3)
+  %28 = icmp ne i64 %return65, 0
+  br i1 %28, label %true66, label %false67
+
+true66:                                           ; preds = %false61
+  store double %output45, double* %3
+  %_lens_lut_3 = call double @"_lens_lut_3@FF"(double* %3)
+  br label %end50
+
+false67:                                          ; preds = %false61
+  %return71 = call i64 @"eq@III"(i64 %lens_select, i64 4)
+  %29 = icmp ne i64 %return71, 0
+  br i1 %29, label %true72, label %end50
+
+true72:                                           ; preds = %false67
+  store double %output45, double* %4
+  %_lens_lut_4 = call double @"_lens_lut_4@FF"(double* %4)
+  br label %end50
+
+true76:                                           ; preds = %end50
+  call void @"printf@S:IFF"(i8* getelementptr inbounds ([62 x i8], [62 x i8]* @11, i64 0, i64 0), i64 %lens_select, double %_f_number.0, double %_sensor_position.0)
+  br label %end77
+
+end77:                                            ; preds = %true76, %end50
+  %return83 = fcmp ole double %lens_fstop, 0.000000e+00
+  br i1 %return83, label %true85, label %end86
+
+true85:                                           ; preds = %end77
+  br label %end86
+
+end86:                                            ; preds = %true85, %end77
+  %fstop_val.0 = phi double [ %_f_number.0, %true85 ], [ %lens_fstop, %end77 ]
+  %return90 = call double @"max@FFF"(double %fstop_val.0, double %_f_number.0)
+  %return92 = call double @"pow@FFF"(double %_f_number.0, double 2.000000e+00)
+  %return94 = call double @"pow@FFF"(double %return90, double 2.000000e+00)
+  %output95 = call double @"div@FF"(double %return92, double %return94)
+  %return96 = call double @"sqrt@FF"(double %output95)
+  %return97 = call double @"min@FFF"(double %return96, double 1.000000e+00)
+  %output100 = fmul double %_sensor_size_native.0, %sensor_scale
+  %30 = icmp ne i64 %flip, 0
+  br i1 %30, label %end104, label %false103
+
+false103:                                         ; preds = %end86
+  %return105 = call double @"neg@FF"(double 1.000000e+00)
+  br label %end104
+
+end104:                                           ; preds = %end86, %false103
+  %phi106 = phi double [ %return105, %false103 ], [ 1.000000e+00, %end86 ]
+  %output108 = fsub double 5.000000e-01, %output32
+  %output110 = fmul double %output108, %output100
+  %output112 = fmul double %output110, %phi106
+  %output114 = fsub double 5.000000e-01, %output35
+  %output116 = fmul double %output114, %output100
+  %output118 = call double @"div@FF"(double %output116, double %aspect)
+  %output120 = fmul double %output118, %phi106
+  %return124 = call double @"neg@FF"(double %_sensor_position.0)
+  %return125 = call <3 x double> @"set@VFFF"(double %output112, double %output120, double %return124)
+  store <3 x double> %return125, <3 x double>* %ray_p
+  %return126 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double 1.000000e+00)
+  store <3 x double> %return126, <3 x double>* %ray_d
+  %return127 = call <3 x double> @"set@VFFF"(double 1.000000e+00, double 1.000000e+00, double 1.000000e+00)
+  store <3 x double> %return127, <3 x double>* %_T
+  store <3 x double> %return126, <3 x double>* %surface_n
+  %ray_p130 = load <3 x double>, <3 x double>* %ray_p
+  %return131 = call double @"getcomp@FVI"(<3 x double> %ray_p130, i64 0)
+  %output133 = fmul double %tilt_shift_offset_x, 1.000000e-03
+  %output134 = fadd double %return131, %output133
+  %return135 = call { double, <3 x double> } @"setcomp@FVFI"(<3 x double> %ray_p130, double %output134, i64 0)
+  %output137 = extractvalue { double, <3 x double> } %return135, 1
+  %return139 = call double @"getcomp@FVI"(<3 x double> %output137, i64 1)
+  %output141 = fmul double %tilt_shift_offset_y, 1.000000e-03
+  %output142 = fadd double %return139, %output141
+  %return144 = call { double, <3 x double> } @"setcomp@FVFI"(<3 x double> %output137, double %output142, i64 1)
+  %output146 = extractvalue { double, <3 x double> } %return144, 1
+  store <3 x double> %output146, <3 x double>* %ray_p
+  %return148 = fcmp one double %tilt_shift_angle_x, 0.000000e+00
+  %return149 = zext i1 %return148 to i64
+  %return151 = fcmp one double %tilt_shift_angle_y, 0.000000e+00
+  %return152 = zext i1 %return151 to i64
+  %return153 = call i64 @"or@III"(i64 %return149, i64 %return152)
+  %31 = icmp ne i64 %return153, 0
+  br i1 %31, label %true154, label %end155
+
+true154:                                          ; preds = %end104
+  %return157 = call double @"getcomp@FVI"(<3 x double> %output146, i64 0)
+  %return159 = call double @"getcomp@FVI"(<3 x double> %output146, i64 1)
+  %return160 = call <3 x double> @"set@VFFF"(double %return157, double %return159, double 0.000000e+00)
+  %return162 = call <3 x double> @"set@VFFF"(double 1.000000e+00, double 0.000000e+00, double 0.000000e+00)
+  %return163 = call <4 x double> @"quaternion@PFV"(double %tilt_shift_angle_x, <3 x double> %return162)
+  %return165 = call <3 x double> @"qrotate@VPV"(<4 x double> %return163, <3 x double> %return160)
+  %return167 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 1.000000e+00, double 0.000000e+00)
+  %return168 = call <4 x double> @"quaternion@PFV"(double %tilt_shift_angle_y, <3 x double> %return167)
+  %return170 = call <3 x double> @"qrotate@VPV"(<4 x double> %return168, <3 x double> %return165)
+  %return172 = call double @"getcomp@FVI"(<3 x double> %return170, i64 0)
+  %return174 = call double @"getcomp@FVI"(<3 x double> %return170, i64 1)
+  %return176 = call double @"getcomp@FVI"(<3 x double> %return170, i64 2)
+  %return178 = call double @"getcomp@FVI"(<3 x double> %output146, i64 2)
+  %output179 = fadd double %return176, %return178
+  %return180 = call <3 x double> @"set@VFFF"(double %return172, double %return174, double %output179)
+  store <3 x double> %return180, <3 x double>* %ray_p
+  br label %end155
+
+end155:                                           ; preds = %true154, %end104
+  %ray_p181 = load <3 x double>, <3 x double>* %ray_p
+  %return182 = call double @"getcomp@FVI"(<3 x double> %ray_p181, i64 2)
+  store double %return182, double* %5
+  store double %_sensor_pos_near.0, double* %6
+  store double %_sensor_pos_start.0, double* %7
+  store double %_sensor_pos_far.0, double* %8
+  store double %_edge_angle_near.0, double* %9
+  store double %_edge_angle.0, double* %10
+  store double %_edge_angle_500m.0, double* %11
+  %ls_ray_guiding_val = call double @"ls_ray_guiding_val@FFFFFFFF"(double* %5, double* %6, double* %7, double* %8, double* %9, double* %10, double* %11)
+  %ray_p189 = load <3 x double>, <3 x double>* %ray_p
+  %return190 = call <3 x double> @"set@VFFF"(double 1.000000e+00, double 1.000000e+00, double 0.000000e+00)
+  %output191 = call <3 x double> @"mul@VV"(<3 x double> %ray_p189, <3 x double> %return190)
+  %return193 = call double @"length@FV"(<3 x double> %output191)
+  %return195 = fcmp ogt double %return193, 1.000000e-05
+  br i1 %return195, label %true197, label %end198
+
+true197:                                          ; preds = %end155
+  %return200 = call double @"neg@FF"(double 5.500000e+00)
+  %output202 = fmul double %return200, %return193
+  %output203 = fmul double %ls_ray_guiding_val, %output202
+  %return205 = call <3 x double> @"normalize@VV"(<3 x double> %output191)
+  %ray_d206 = load <3 x double>, <3 x double>* %ray_d
+  %return208 = call <3 x double> @"cross@VVV"(<3 x double> %ray_d206, <3 x double> %return205)
+  %return210 = call double @"radians@FF"(double %output203)
+  %return212 = call <4 x double> @"quaternion@PFV"(double %return210, <3 x double> %return208)
+  %ray_d213 = load <3 x double>, <3 x double>* %ray_d
+  %return214 = call <3 x double> @"qrotate@VPV"(<4 x double> %return212, <3 x double> %ray_d213)
+  store <3 x double> %return214, <3 x double>* %ray_d
+  br label %end198
+
+end198:                                           ; preds = %true197, %end155
+  %return216 = fcmp one double %chromatic_aberration, 0.000000e+00
+  br i1 %return216, label %true218, label %end219
+
+true218:                                          ; preds = %end198
+  %output222 = fmul double %dofx, 1.700000e+01
+  %output223 = fadd double %x, %output222
+  %output226 = fmul double %dofy, 3.100000e+01
+  %output227 = fadd double %y, %output226
+  %return228 = call <3 x double> @"set@VFFF"(double %output223, double %output227, double 0x41E7E638FC400000)
+  %return229 = call double @"rand@FV"(<3 x double> %return228)
+  %output231 = fmul double %return229, 4.000000e+01
+  %return232 = call i64 @"floor@IF"(double %output231)
+  %return234 = call i64 @"clamp@IIII"(i64 %return232, i64 0, i64 39)
+  %_T235 = load <3 x double>, <3 x double>* %_T
+  %return238 = call <3 x double> @"getcomp@V[VI"(<3 x double>* getelementptr inbounds ([40 x <3 x double>], [40 x <3 x double>]* @12, i64 0, i64 0), i64 %return234)
+  %output239 = call <3 x double> @"mul@VV"(<3 x double> %_T235, <3 x double> %return238)
+  store <3 x double> %output239, <3 x double>* %_T
+  br label %end219
+
+end219:                                           ; preds = %true218, %end198
+  br i1 %24, label %true241, label %end242
+
+true241:                                          ; preds = %end219
+  %ray_p244 = load <3 x double>, <3 x double>* %ray_p
+  %return245 = call double @"getcomp@FVI"(<3 x double> %ray_p244, i64 0)
+  %return247 = call double @"getcomp@FVI"(<3 x double> %ray_p244, i64 1)
+  %return249 = call double @"getcomp@FVI"(<3 x double> %ray_p244, i64 2)
+  call void @"printf@S:IFFF"(i8* getelementptr inbounds ([51 x i8], [51 x i8]* @13, i64 0, i64 0), i64 %lens_select, double %return245, double %return247, double %return249)
+  br label %end242
+
+end242:                                           ; preds = %true241, %end219
+  br i1 %25, label %true252, label %false253
+
+true252:                                          ; preds = %end242
+  call void @"_lens_trace_0@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n)
+  br label %end254
+
+false253:                                         ; preds = %end242
+  %return256 = call i64 @"eq@III"(i64 %lens_select, i64 1)
+  %32 = icmp ne i64 %return256, 0
+  br i1 %32, label %true257, label %false258
+
+end254:                                           ; preds = %false268, %true272, %true267, %true262, %true257, %true252
+  br i1 %24, label %true275, label %end276
+
+true257:                                          ; preds = %false253
+  call void @"_lens_trace_1@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n)
+  br label %end254
+
+false258:                                         ; preds = %false253
+  %return261 = call i64 @"eq@III"(i64 %lens_select, i64 2)
+  %33 = icmp ne i64 %return261, 0
+  br i1 %33, label %true262, label %false263
+
+true262:                                          ; preds = %false258
+  call void @"_lens_trace_2@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n)
+  br label %end254
+
+false263:                                         ; preds = %false258
+  %return266 = call i64 @"eq@III"(i64 %lens_select, i64 3)
+  %34 = icmp ne i64 %return266, 0
+  br i1 %34, label %true267, label %false268
+
+true267:                                          ; preds = %false263
+  call void @"_lens_trace_3@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n)
+  br label %end254
+
+false268:                                         ; preds = %false263
+  %return271 = call i64 @"eq@III"(i64 %lens_select, i64 4)
+  %35 = icmp ne i64 %return271, 0
+  br i1 %35, label %true272, label %end254
+
+true272:                                          ; preds = %false268
+  call void @"_lens_trace_4@VVVV"(<3 x double>* %ray_p, <3 x double>* %ray_d, <3 x double>* %_T, <3 x double>* %surface_n)
+  br label %end254
+
+true275:                                          ; preds = %end254
+  %ray_d278 = load <3 x double>, <3 x double>* %ray_d
+  %return279 = call double @"getcomp@FVI"(<3 x double> %ray_d278, i64 0)
+  %return281 = call double @"getcomp@FVI"(<3 x double> %ray_d278, i64 1)
+  %return283 = call double @"getcomp@FVI"(<3 x double> %ray_d278, i64 2)
+  %_T284 = load <3 x double>, <3 x double>* %_T
+  %return285 = call double @"getcomp@FVI"(<3 x double> %_T284, i64 0)
+  %return287 = call double @"getcomp@FVI"(<3 x double> %_T284, i64 1)
+  %return289 = call double @"getcomp@FVI"(<3 x double> %_T284, i64 2)
+  call void @"printf@S:IFFFFFF"(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @14, i64 0, i64 0), i64 %lens_select, double %return279, double %return281, double %return283, double %return285, double %return287, double %return289)
+  br label %end276
+
+end276:                                           ; preds = %true275, %end254
+  %_T290 = load <3 x double>, <3 x double>* %_T
+  %return292 = call double @"pow@FFF"(double 2.000000e+00, double %exposure)
+  %cast = call <3 x double> @"set@VF"(double %return292)
+  %output293 = call <3 x double> @"mul@VV"(<3 x double> %_T290, <3 x double> %cast)
+  store <3 x double> %output293, <3 x double>* %_T
+  %return295 = call i64 @"eq@III"(i64 %aperture_auto_exposure, i64 1)
+  %36 = icmp ne i64 %return295, 0
+  br i1 %36, label %true296, label %end297
+
+true296:                                          ; preds = %end276
+  %return300 = call double @"pow@FFF"(double %return97, double 2.000000e+00)
+  %output301 = call double @"div@FF"(double 1.000000e+00, double %return300)
+  %cast302 = call <3 x double> @"set@VF"(double %output301)
+  %output303 = call <3 x double> @"mul@VV"(<3 x double> %output293, <3 x double> %cast302)
+  store <3 x double> %output303, <3 x double>* %_T
+  br label %end297
+
+end297:                                           ; preds = %true296, %end276
+  %output306 = fmul double %_aperture_r.0, %return97
+  %output308 = fmul double %output306, %dof_factor
+  %output310 = fsub double 1.000000e+00, %dof_remove
+  %output311 = fmul double %output308, %output310
+  %return313 = fcmp ogt double %output311, 0.000000e+00
+  %return314 = zext i1 %return313 to i64
+  %return316 = fcmp one double %dofx, 0.000000e+00
+  %return317 = zext i1 %return316 to i64
+  %return319 = fcmp one double %dofy, 0.000000e+00
+  %return320 = zext i1 %return319 to i64
+  %return321 = call i64 @"or@III"(i64 %return317, i64 %return320)
+  %return322 = call i64 @"and@III"(i64 %return314, i64 %return321)
+  %37 = icmp ne i64 %return322, 0
+  br i1 %37, label %true323, label %end324
+
+true323:                                          ; preds = %end297
+  %ray_p325 = load <3 x double>, <3 x double>* %ray_p
+  store <3 x double> %ray_p325, <3 x double>* %12
+  %ray_d326 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d326, <3 x double>* %13
+  store <3 x double> %return126, <3 x double>* %14
+  %return329 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double %output45)
+  store <3 x double> %return329, <3 x double>* %15
+  %ls_rayPlaneIntersect = call <3 x double> @"ls_rayPlaneIntersect@VVVVV"(<3 x double>* %12, <3 x double>* %13, <3 x double>* %14, <3 x double>* %15)
+  %ray_p330 = load <3 x double>, <3 x double>* %ray_p
+  %output333 = fmul double %dofx, %output311
+  %output336 = fmul double %dofy, %output311
+  %return337 = call <3 x double> @"set@VFFF"(double %output333, double %output336, double 0.000000e+00)
+  %output338 = call <3 x double> @"add@VV"(<3 x double> %ray_p330, <3 x double> %return337)
+  store <3 x double> %output338, <3 x double>* %ray_p
+  %output341 = call <3 x double> @"sub@VV"(<3 x double> %ls_rayPlaneIntersect, <3 x double> %output338)
+  %return342 = call <3 x double> @"normalize@VV"(<3 x double> %output341)
+  store <3 x double> %return342, <3 x double>* %ray_d
+  br label %end324
+
+end324:                                           ; preds = %true323, %end297
+  %return344 = fcmp one double %bokeh_swirliness, 0.000000e+00
+  br i1 %return344, label %true346, label %end347
+
+true346:                                          ; preds = %end324
+  %ray_p349 = load <3 x double>, <3 x double>* %ray_p
+  store <3 x double> %ray_p349, <3 x double>* %16
+  %ray_d350 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d350, <3 x double>* %17
+  store <3 x double> %return126, <3 x double>* %18
+  %return353 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double %output45)
+  store <3 x double> %return353, <3 x double>* %19
+  %ls_rayPlaneIntersect354 = call <3 x double> @"ls_rayPlaneIntersect@VVVVV"(<3 x double>* %16, <3 x double>* %17, <3 x double>* %18, <3 x double>* %19)
+  %return356 = call <3 x double> @"normalize@VV"(<3 x double> %ls_rayPlaneIntersect354)
+  %cast358 = call <3 x double> @"set@VF"(double %output45)
+  %output359 = call <3 x double> @"mul@VV"(<3 x double> %return356, <3 x double> %cast358)
+  %cast360 = call <3 x double> @"set@VF"(double 2.000000e+00)
+  %output361 = call <3 x double> @"mul@VV"(<3 x double> %output359, <3 x double> %cast360)
+  %ray_p362 = load <3 x double>, <3 x double>* %ray_p
+  store <3 x double> %ray_p362, <3 x double>* %20
+  %ray_d363 = load <3 x double>, <3 x double>* %ray_d
+  store <3 x double> %ray_d363, <3 x double>* %21
+  store <3 x double> %return126, <3 x double>* %22
+  store <3 x double> %output361, <3 x double>* %23
+  %ls_rayPlaneIntersect366 = call <3 x double> @"ls_rayPlaneIntersect@VVVVV"(<3 x double>* %20, <3 x double>* %21, <3 x double>* %22, <3 x double>* %23)
+  %output369 = call <3 x double> @"mul@VV"(<3 x double> %ls_rayPlaneIntersect366, <3 x double> %return190)
+  %return370 = call double @"length@FV"(<3 x double> %output369)
+  %output373 = call <3 x double> @"mul@VV"(<3 x double> %output361, <3 x double> %return190)
+  %return374 = call double @"length@FV"(<3 x double> %output373)
+  %return376 = call double @"max@FFF"(double %return370, double 1.000000e-04)
+  %output377 = call double @"div@FF"(double %return374, double %return376)
+  %return379 = call double @"getcomp@FVI"(<3 x double> %ls_rayPlaneIntersect366, i64 0)
+  %output381 = fmul double %return379, %output377
+  %return383 = call double @"getcomp@FVI"(<3 x double> %ls_rayPlaneIntersect366, i64 1)
+  %output385 = fmul double %return383, %output377
+  %return387 = call double @"getcomp@FVI"(<3 x double> %ls_rayPlaneIntersect366, i64 2)
+  %return388 = call <3 x double> @"set@VFFF"(double %output381, double %output385, double %return387)
+  %return392 = call <3 x double> @"lerp@VVVF"(<3 x double> %ls_rayPlaneIntersect366, <3 x double> %return388, double %bokeh_swirliness)
+  %output395 = call <3 x double> @"sub@VV"(<3 x double> %return392, <3 x double> %ls_rayPlaneIntersect354)
+  %return396 = call <3 x double> @"normalize@VV"(<3 x double> %output395)
+  store <3 x double> %return396, <3 x double>* %ray_d
+  %return399 = call double @"length@FV"(<3 x double> %return392)
+  %ray_d400 = load <3 x double>, <3 x double>* %ray_d
+  %cast401 = call <3 x double> @"set@VF"(double %return399)
+  %output402 = call <3 x double> @"mul@VV"(<3 x double> %cast401, <3 x double> %ray_d400)
+  %output403 = call <3 x double> @"sub@VV"(<3 x double> %return392, <3 x double> %output402)
+  store <3 x double> %output403, <3 x double>* %ray_p
+  br label %end347
+
+end347:                                           ; preds = %true346, %end324
+  %return405 = fcmp one double %distortion_amount, 0.000000e+00
+  br i1 %return405, label %true407, label %end408
+
+true407:                                          ; preds = %end347
+  %ray_d409 = load <3 x double>, <3 x double>* %ray_d
+  %return410 = call double @"getcomp@FVI"(<3 x double> %ray_d409, i64 0)
+  %return412 = call double @"getcomp@FVI"(<3 x double> %ray_d409, i64 1)
+  %return413 = call <3 x double> @"set@VFFF"(double %return410, double %return412, double 0.000000e+00)
+  %return414 = call double @"length@FV"(<3 x double> %return413)
+  %return416 = call double @"pow@FFF"(double %return414, double %distortion_exponent)
+  %output418 = fmul double %return416, %distortion_amount
+  %ray_d419 = load <3 x double>, <3 x double>* %ray_d
+  %return420 = call double @"neg@FF"(double 1.000000e+00)
+  %return421 = call <3 x double> @"set@VFFF"(double 0.000000e+00, double 0.000000e+00, double %return420)
+  %return423 = call <3 x double> @"lerp@VVVF"(<3 x double> %ray_d419, <3 x double> %return421, double %output418)
+  store <3 x double> %return423, <3 x double>* %ray_d
+  %return425 = call <3 x double> @"normalize@VV"(<3 x double> %return423)
+  store <3 x double> %return425, <3 x double>* %ray_d
+  br label %end408
+
+end408:                                           ; preds = %true407, %end347
+  %ray_p426 = load <3 x double>, <3 x double>* %ray_p
+  %cast428 = call <3 x double> @"set@VF"(double %global_scale)
+  %output429 = call <3 x double> @"mul@VV"(<3 x double> %ray_p426, <3 x double> %cast428)
+  %ray_d430 = load <3 x double>, <3 x double>* %ray_d
+  %_T431 = load <3 x double>, <3 x double>* %_T
+  br i1 %24, label %true433, label %end434
+
+true433:                                          ; preds = %end408
+  %return437 = call double @"getcomp@FVI"(<3 x double> %output429, i64 0)
+  %return439 = call double @"getcomp@FVI"(<3 x double> %output429, i64 1)
+  %return441 = call double @"getcomp@FVI"(<3 x double> %output429, i64 2)
+  %return443 = call double @"getcomp@FVI"(<3 x double> %ray_d430, i64 0)
+  %return445 = call double @"getcomp@FVI"(<3 x double> %ray_d430, i64 1)
+  %return447 = call double @"getcomp@FVI"(<3 x double> %ray_d430, i64 2)
+  call void @"printf@S:IFFFFFF"(i8* getelementptr inbounds ([66 x i8], [66 x i8]* @15, i64 0, i64 0), i64 %lens_select, double %return437, double %return439, double %return441, double %return443, double %return445, double %return447)
+  br label %end434
+
+end434:                                           ; preds = %true433, %end408
+  %gvalue = call <3 x double> @"_export@VSV"(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @16, i64 0, i64 0), <3 x double> %output429) #4
+  %gvalue449 = call <3 x double> @"_export@VSV"(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @17, i64 0, i64 0), <3 x double> %ray_d430) #4
+  %gvalue451 = call <3 x double> @"_export@VSV"(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @18, i64 0, i64 0), <3 x double> %_T431) #4
+  store <3 x double> %gvalue, <3 x double>* @P
+  store <3 x double> %gvalue449, <3 x double>* @I
+  store <3 x double> %gvalue451, <3 x double>* @tint
+  ret void
+}
+
+; Function Attrs: nounwind
+declare void @"printf@S:I"(i8*, i64) #2
+
+; Function Attrs: nounwind
+declare void @"printf@S:IFF"(i8*, i64, double, double) #2
+
+; Function Attrs: nounwind readnone
+declare double @"max@FFF"(double, double) #1
+
+; Function Attrs: nounwind readnone
+declare double @"pow@FFF"(double, double) #1
+
+; Function Attrs: nounwind readnone
+declare double @"min@FFF"(double, double) #1
+
+; Function Attrs: nounwind readnone
+declare double @"getcomp@FVI"(<3 x double>, i64) #1
+
+; Function Attrs: alwaysinline
+define private { double, <3 x double> } @"setcomp@FVFI"(<3 x double> %rw11, double %rw22, i64 %rw33) #3 {
+__llvm_entry:
+  %rw16 = call <3 x double> @"setcomp@VFI"(<3 x double> %rw11, double %rw22, i64 %rw33)
+  %mrv = insertvalue { double, <3 x double> } undef, double %rw22, 0
+  %mrv9 = insertvalue { double, <3 x double> } %mrv, <3 x double> %rw16, 1
+  ret { double, <3 x double> } %mrv9
+}
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"setcomp@VFI"(<3 x double>, double, i64) #1
+
+; Function Attrs: nounwind readnone
+declare i64 @"or@III"(i64, i64) #1
+
+; Function Attrs: nounwind readnone
+declare <4 x double> @"quaternion@PFV"(double, <3 x double>) #1
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"qrotate@VPV"(<4 x double>, <3 x double>) #1
+
+; Function Attrs: nounwind
+declare <3 x double> @"cross@VVV"(<3 x double>, <3 x double>) #2
+
+; Function Attrs: nounwind
+declare double @"radians@FF"(double) #2
+
+; Function Attrs: nounwind
+declare double @"rand@FV"(<3 x double>) #2
+
+; Function Attrs: nounwind
+declare i64 @"floor@IF"(double) #2
+
+; Function Attrs: nounwind
+declare i64 @"clamp@IIII"(i64, i64, i64) #2
+
+; Function Attrs: nounwind readnone
+declare <3 x double> @"getcomp@V[VI"(<3 x double>*, i64) #1
+
+; Function Attrs: nounwind
+declare void @"printf@S:IFFF"(i8*, i64, double, double, double) #2
+
+; Function Attrs: nounwind
+declare void @"printf@S:IFFFFFF"(i8*, i64, double, double, double, double, double, double) #2
+
+; Function Attrs: nounwind
+declare <3 x double> @"lerp@VVVF"(<3 x double>, <3 x double>, double) #2
+
+declare <3 x double> @"_export@VSV"(i8*, <3 x double>)
+
+define void @__shader_default_arguments() {
+__llvm_entry:
+  call void @lentilkarma(double 0.000000e+00, double 0.000000e+00, double 0.000000e+00, double 0.000000e+00, double 0.000000e+00, double 1.000000e+00, <3 x double> zeroinitializer, <3 x double> zeroinitializer, <3 x double> <double 1.000000e+00, double 1.000000e+00, double 1.000000e+00>, i64 0, double 0.000000e+00, double 0.000000e+00, double 0.000000e+00, double 0.000000e+00, i64 1, i64 1, double 0.000000e+00, double 0.000000e+00, double 0.000000e+00, double 0.000000e+00, double 1.000000e+00, double 0.000000e+00, i64 1, double 1.000000e+00, double 0.000000e+00, double 2.000000e+00, double 0.000000e+00, double 1.000000e+00, i64 0)
+  ret void
+}
+
+attributes #0 = { alwaysinline nounwind }
+attributes #1 = { nounwind readnone }
+attributes #2 = { nounwind }
+attributes #3 = { alwaysinline }
+attributes #4 = { nounwind readonly }
+
+!context = !{!0}
+!precision = !{!1}
+
+!0 = !{!"cvex"}
+!1 = !{!"64"}
+
+;_code_end

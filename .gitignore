@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.claude/
+bash.exe.stackdump
+nul
+*.stackdump
