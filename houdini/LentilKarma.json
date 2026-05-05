@@ -1,7 +1,7 @@
 {
     "env": [
         {
-            "LENTILKARMA": "C:/Users/christophe.leyder/Desktop/LensSim-3.2.0/"
+            "LENTILKARMA": "/path/to/lentilkarma/"
         },
         {
             "PYTHONPATH": {
