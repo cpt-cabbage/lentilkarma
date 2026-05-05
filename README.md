@@ -1,7 +1,7 @@
 # LentilKarma for Houdini 20.5
 
 LentilKarma physically simulates real camera lenses in Karma CPU by tracing rays
-through multi-element optical systems using patented lens prescription data.
+through multi-element optical systems using real-world lens prescription data.
 Each lens generates a specialized CVEX lens shader with all optical constants
 baked for maximum render performance.
 
@@ -40,6 +40,8 @@ In Houdini's Python Shell:
 import lentilkarma_houdini
 lentilkarma_houdini.show_lens_browser()
 ```
+
+The lens browser lets you select individual lenses or apply all lenses at once to generate a combined multi-lens shader.
 
 Or generate from a specific lens file:
 
@@ -99,7 +101,9 @@ vcc -I ../vex -o output.vex output.vfl
 ```
 lentilkarma/
 ├── LentilKarma_Data/
-│   └── lenses/               # Lens prescription .txt files
+│   ├── lenses/               # Lens prescription .txt files
+│   ├── presets/              # Chromatic aberration, sensor size, color ramp presets
+│   └── textures/             # Bokeh shape textures
 ├── houdini/
 │   ├── LentilKarma.json      # Houdini package descriptor
 │   ├── vex/
