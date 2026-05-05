@@ -143,3 +143,7 @@ Generated shaders expose these user-controllable parameters:
 - Ray guiding optimization reduces noise by directing samples toward valid optical paths
 - Chromatic aberration uses 40 wavelength samples with stochastic selection
 - All optical functions are in `lentilkarma_core.h` and prefixed with `ls_` to avoid conflicts
+
+## Attribution
+
+LentilKarma is based on [Lentil](https://github.com/zpelgrims/lentil) by Zeno Pelgrims — a physically accurate lens simulation shader for Arnold. The optical model, lens prescription data format, and core ray-tracing approach originate from that project.
