@@ -2,7 +2,7 @@
 Extract and compare DialogScript from our test modern HDA vs the anaglyphlens demo.
 
 Usage in Houdini Python Shell:
-    exec(open(r"C:/Users/christophe.leyder/Desktop/LensSim-3.2.0/houdini/python/lentilkarma_compare_hda.py").read())
+    exec(open("/path/to/lentilkarma/houdini/python/lentilkarma_compare_hda.py").read())
 """
 
 import hou
@@ -13,7 +13,7 @@ print("=" * 60)
 print("HDA DialogScript Comparison")
 print("=" * 60)
 
-output_dir = r"C:\Users\christophe.leyder\Desktop\LensSim-3.2.0\houdini\vex\_hda_compare"
+output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "vex", "_hda_compare")
 os.makedirs(output_dir, exist_ok=True)
 
 # Find HDAs

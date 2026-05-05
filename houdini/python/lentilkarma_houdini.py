@@ -125,7 +125,7 @@ def get_lenses_dir():
     _log_info(f"LENTILKARMA env var = '{lentilkarma_root}'")
 
     if lentilkarma_root:
-        lenses_dir = os.path.join(lentilkarma_root, "LentilKarma_Data", "lenses")
+        lenses_dir = os.path.join(lentilkarma_root, "lenses")
         _log_info(f"Checking lenses dir: {lenses_dir}")
         if os.path.exists(lenses_dir):
             _log_info(f"Found lenses dir: {lenses_dir}")
@@ -135,7 +135,7 @@ def get_lenses_dir():
 
     # Fall back to relative path from this script
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    lenses_dir = os.path.join(script_dir, "..", "..", "LentilKarma_Data", "lenses")
+    lenses_dir = os.path.join(script_dir, "..", "..", "lenses")
     lenses_dir = os.path.normpath(lenses_dir)
     _log_info(f"Trying fallback lenses dir: {lenses_dir}")
     if os.path.exists(lenses_dir):

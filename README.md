@@ -60,7 +60,7 @@ Or generate from a specific lens file:
 ```python
 import lentilkarma_houdini
 result = lentilkarma_houdini.apply_lens_to_camera(
-    "/path/to/lentilkarma/LentilKarma_Data/lenses/100mm f1.4 W Merte 1928 Baltar.txt"
+    "/path/to/lentilkarma/lenses/100mm f1.4 W Merte 1928 Baltar.txt"
 )
 ```
 
@@ -99,7 +99,7 @@ Generate VEX source from a lens file:
 
 ```bash
 cd houdini/python
-python lentilkarma_codegen.py "../../LentilKarma_Data/lenses/100mm f1.4 W Merte 1928 Baltar.txt" output.vfl
+python lentilkarma_codegen.py "../../lenses/100mm f1.4 W Merte 1928 Baltar.txt" output.vfl
 ```
 
 Then compile with Houdini's VEX compiler:
@@ -112,10 +112,7 @@ vcc -I ../vex -o output.vex output.vfl
 
 ```
 lentilkarma/
-├── LentilKarma_Data/
-│   ├── lenses/               # Lens prescription .txt files
-│   ├── presets/              # Chromatic aberration, sensor size, color ramp presets
-│   └── textures/             # Bokeh shape textures
+├── lenses/                    # Lens prescription .txt files
 ├── houdini/
 │   ├── LentilKarma.json      # Houdini package descriptor
 │   ├── vex/

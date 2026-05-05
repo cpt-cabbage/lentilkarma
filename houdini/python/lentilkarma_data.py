@@ -720,7 +720,7 @@ if __name__ == "__main__":
     else:
         # Default test file
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        filepath = os.path.join(script_dir, "..", "..", "LentilKarma_Data", "lenses",
+        filepath = os.path.join(script_dir, "..", "..", "lenses",
                                 "100mm f1.4 W Merte 1928 Baltar.txt")
 
     if os.path.exists(filepath):
