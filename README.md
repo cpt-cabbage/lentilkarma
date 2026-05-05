@@ -7,6 +7,19 @@ baked for maximum render performance.
 
 **Supported renderer:** Karma CPU only (CVEX lens shaders are not supported in Karma XPU)
 
+> **Disclaimer — experimental project**
+>
+> LentilKarma is a personal experiment and is **not intended for production use**.
+> A few things to keep in mind before you rely on it for anything serious:
+>
+> - **No stability guarantees.** APIs, shader parameters, and file formats may change without notice between commits.
+> - **No warranty.** The code is provided as-is. Incorrect optical math or edge-case lens data could produce subtly wrong renders without any obvious error.
+> - **Houdini version lock.** The package targets Houdini 20.5 specifically. Other versions may silently break.
+> - **Pre-compiled shaders may be stale.** `lentilkarma.vex` and `lentilkarma_small.vex` were compiled at a point in time — if you modify the VEX source you must recompile.
+> - **No test suite.** There is no automated testing, so regressions are possible after any change.
+>
+> Use it to learn, experiment, and have fun — but don't build a pipeline around it.
+
 ## Quick Start
 
 ### 1. Install the Package
