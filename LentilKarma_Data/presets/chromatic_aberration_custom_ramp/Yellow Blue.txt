@@ -1,4 +1,0 @@
-Color Ramp:Custom Chromatic Aberration Color Ramp = interpolation:LINEAR color_mode:RGB pos:0.0 color:1.0,1.0,0.0,1.0 pos:1.0 color:0.0,0.0,1.0,1.0
-Float Curve:Custom Chromatic Aberration Float Curve = clip_min_x:0.0 clip_min_y:0.0 clip_max_x:1.0 clip_max_y:1.0 black_level:0.0,0.0,0.0 white_level:1.0,1.0,1.0 location:0.0,0.0 handle_type:AUTO location:1.0,1.0 handle_type:AUTO
-custom chromatic aberration type = True
-Float3:custom color ramp mult = 2.0,2.0,2.0

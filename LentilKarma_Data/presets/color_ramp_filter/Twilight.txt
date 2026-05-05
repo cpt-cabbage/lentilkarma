@@ -1,5 +1,0 @@
-Color Ramp:Custom Color Filter Ramp = interpolation:LINEAR color_mode:RGB pos:0.0 color:0.08556699752807617,0.01791599951684475,0.2939850091934204,1.0 pos:0.4000000059604645 color:0.7156890034675598,0.08437599986791611,0.5028870105743408,1.0 pos:0.6000000238418579 color:1.0,1.0,1.0,1.0
-color ramp filter enable = True
-color ramp filter radial = 0.0
-color ramp filter rotation = 0.0
-color ramp filter opacity = 100.0
