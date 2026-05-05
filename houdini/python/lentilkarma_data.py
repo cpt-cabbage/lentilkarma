@@ -9,7 +9,7 @@ for VEX code generation.
 import os
 import math
 
-# Constants matching LentilKarma Blender addon
+# Constants from the original Blender addon (Lens Sim)
 MAX_LENSES = 30
 MAX_ASPHERE_SURFACES = 15
 MAX_ASPHERE_CONIC_CONSTANTS = 15
@@ -47,8 +47,7 @@ def parse_lens_file(filepath):
 def get_lens_data(filepath, zoom_factor=0.0, rack_focus_factor=0.0, aperture_factor=1.0):
     """Parse a lens file and return structured lens data.
 
-    This is the Houdini equivalent of LentilKarma's get_lens_data() function,
-    operating purely from file data (no Blender properties).
+    Ported from the original Blender addon's get_lens_data(). Operates purely from file data.
 
     Args:
         filepath: Path to the .txt lens file
@@ -582,7 +581,7 @@ def calc_sensor_pos_from_focus(lens_data, reference_distance, focus_sample_h_ove
 
 
 def exponential_scale(n_points=100, min_value=0.0, max_value=1000.0, exp_factor=5.0):
-    """Generate exponentially spaced values (matching LentilKarma's scale).
+    """Generate exponentially spaced values.
 
     Denser at the beginning (near focus), sparser at far distances.
     """

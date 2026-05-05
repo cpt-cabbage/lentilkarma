@@ -2,7 +2,7 @@
 LentilKarma VEX Code Generator for Houdini
 Generates specialized CVEX lens shaders from lens data files.
 
-This is the Houdini equivalent of LentilKarma's compile_osl_shader().
+Ported from the original Blender addon's compile_osl_shader() (Lens Sim).
 It generates VEX code with all optical constants baked as literals
 for maximum render performance.
 """
